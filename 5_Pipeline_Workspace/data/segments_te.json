@@ -1,0 +1,2081 @@
+[
+  {
+    "id": 0,
+    "start": 0.0,
+    "end": 4.0,
+    "hi_clean": "क्या हर रोज़ पेट साफ़ करना आपके लिए मुश्किल होता जा रहा है?",
+    "te": "రోజూ కడుపు శుభ్రంగా అవ్వడం మీకు కష్టంగా మారిపోతోందా?",
+    "bt": "Is getting your stomach cleared every day becoming difficult for you?",
+    "flag": ""
+  },
+  {
+    "id": 1,
+    "start": 4.0,
+    "end": 8.0,
+    "hi_clean": "और इस कॉन्स्टिपेशन की वजह से आप बॉडी में लो एनर्जी,",
+    "te": "ఈ మలబద్ధకం వల్ల మీకు బాడీలో లో ఎనర్జీ,",
+    "bt": "Because of this constipation, low energy in your body,",
+    "flag": ""
+  },
+  {
+    "id": 2,
+    "start": 8.0,
+    "end": 12.0,
+    "hi_clean": "हैवीनेस, ब्लोटिंग या सिरदर्द जैसे सिम्प्टम्स भी एक्सपीरियंस करने लगे हैं?",
+    "te": "హెవీనెస్, బ్లోటింగ్, తలనొప్పి లాంటి సింప్టమ్స్ కూడా మొదలయ్యాయా?",
+    "bt": "Have symptoms like heaviness, bloating, headache also started?",
+    "flag": ""
+  },
+  {
+    "id": 3,
+    "start": 13.0,
+    "end": 19.0,
+    "hi_clean": "लैक्सेटिव्स, चूरन, त्रिफला, गरम पानी — सब ट्राय करने के बाद भी कोई परमानेंट सलूशन नहीं मिल रहा?",
+    "te": "లాక్సేటివ్స్, చూర్ణం, త్రిఫల, వేడి నీళ్లు — అన్నీ ట్రై చేసినా పర్మనెంట్ సొల్యూషన్ దొరకడం లేదా?",
+    "bt": "Laxatives, churna, Triphala, hot water — even after trying everything, you are not finding a permanent solution?",
+    "flag": ""
+  },
+  {
+    "id": 4,
+    "start": 19.0,
+    "end": 22.0,
+    "hi_clean": "अगर हाँ, तो आप एकदम सही जगह आए हैं।",
+    "te": "అవునంటే, మీరు కరెక్ట్ ప్లేస్‌కే వచ్చారు.",
+    "bt": "If yes, you have come to exactly the correct place.",
+    "flag": ""
+  },
+  {
+    "id": 5,
+    "start": 22.0,
+    "end": 26.0,
+    "hi_clean": "इस वीडियो में आप जानेंगे पाँच शक्तिशाली तरीक़ों के बारे में,",
+    "te": "ఈ వీడియోలో మీరు ఐదు పవర్‌ఫుల్ పద్ధతుల గురించి తెలుసుకుంటారు,",
+    "bt": "In this video you will learn about five powerful methods,",
+    "flag": ""
+  },
+  {
+    "id": 6,
+    "start": 26.0,
+    "end": 30.0,
+    "hi_clean": "जो आपको कॉन्स्टिपेशन को जड़ से ख़त्म करने में मदद करेंगे,",
+    "te": "అవి మలబద్ధకాన్ని రూట్ నుంచే పోగొట్టడంలో మీకు హెల్ప్ చేస్తాయి —",
+    "bt": "They will help you get rid of constipation right from the root —",
+    "flag": "health-claim"
+  },
+  {
+    "id": 7,
+    "start": 30.0,
+    "end": 32.0,
+    "hi_clean": "सिर्फ़ इक्कीस दिनों में।",
+    "te": "జస్ట్ ఇరవై ఒక్క రోజుల్లో.",
+    "bt": "In just twenty-one days.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 8,
+    "start": 32.0,
+    "end": 35.0,
+    "hi_clean": "आगे आप जानेंगे एक ऐसे हर्ब के बारे में,",
+    "te": "తర్వాత, ఒక స్పెషల్ హెర్బ్ గురించి తెలుసుకుంటారు —",
+    "bt": "Later, you will learn about a special herb —",
+    "flag": ""
+  },
+  {
+    "id": 9,
+    "start": 35.0,
+    "end": 38.0,
+    "hi_clean": "जो आपके बावेल मूवमेंट्स को नैचुरली रेगुलेट करता है,",
+    "te": "అది మీ మోషన్‌ని నేచురల్‌గా రెగ్యులేట్ చేస్తుంది,",
+    "bt": "It naturally regulates your motion,",
+    "flag": "health-claim"
+  },
+  {
+    "id": 10,
+    "start": 38.0,
+    "end": 40.0,
+    "hi_clean": "और आपकी किचन में अभी मौजूद है।",
+    "te": "అది ఇప్పుడు మీ కిచెన్‌లోనే ఉంది.",
+    "bt": "And it is right there in your kitchen now.",
+    "flag": ""
+  },
+  {
+    "id": 11,
+    "start": 40.0,
+    "end": 42.0,
+    "hi_clean": "और उस एक ऐसी चीज़ के बारे में,",
+    "te": "ఇంకా అలాంటి ఒక విషయం గురించి —",
+    "bt": "And also about one such thing —",
+    "flag": ""
+  },
+  {
+    "id": 12,
+    "start": 42.0,
+    "end": 45.0,
+    "hi_clean": "जो कॉन्स्टिपेशन में अक्सर डॉक्टर्स रिकमेंड करते हैं,",
+    "te": "మలబద్ధకానికి డాక్టర్లు తరచూ రికమెండ్ చేసేది,",
+    "bt": "The one doctors often recommend for constipation,",
+    "flag": ""
+  },
+  {
+    "id": 13,
+    "start": 45.0,
+    "end": 49.0,
+    "hi_clean": "लेकिन वो आपकी कंडीशन को एक्चुअली और ज़्यादा बिगाड़ देता है।",
+    "te": "కానీ అది యాక్చువల్‌గా మీ కండిషన్‌ని ఇంకా పాడు చేస్తుంది.",
+    "bt": "But it actually spoils your condition even more.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 14,
+    "start": 52.0,
+    "end": 55.0,
+    "hi_clean": "आइए शुरू करते हैं अपने पहले टूल से।",
+    "te": "రండి, మన మొదటి టూల్‌తో స్టార్ట్ చేద్దాం.",
+    "bt": "Come, let us start with our first tool.",
+    "flag": ""
+  },
+  {
+    "id": 15,
+    "start": 56.0,
+    "end": 59.0,
+    "hi_clean": "आजकल हम वेस्टर्न टॉयलेट्स यूज़ करने लगे हैं,",
+    "te": "ఈ రోజుల్లో మనం వెస్ట్రన్ టాయిలెట్స్ వాడేస్తున్నాం.",
+    "bt": "These days we have taken to using western toilets.",
+    "flag": ""
+  },
+  {
+    "id": 16,
+    "start": 59.0,
+    "end": 63.0,
+    "hi_clean": "जिनमें आपकी बॉडी और नीज़ का ऐसे नब्बे डिग्री का ऐंगल बनता है।",
+    "te": "వాటిలో మీ బాడీకి, మోకాళ్లకి మధ్య ఇలా తొంభై డిగ్రీల యాంగిల్ వస్తుంది.",
+    "bt": "In them, an angle of ninety degrees comes like this between your body and knees.",
+    "flag": ""
+  },
+  {
+    "id": 17,
+    "start": 63.0,
+    "end": 70.0,
+    "hi_clean": "अब प्रॉब्लम ये है कि इस पोज़िशन में आपकी इंटेस्टाइन का आख़िरी हिस्सा — आपका रेक्टम — बेंट रहता है,",
+    "te": "ప్రాబ్లమ్ ఏంటంటే — ఈ పొజిషన్‌లో మీ పేగు చివరి భాగం, అంటే రెక్టమ్, వంగి ఉంటుంది.",
+    "bt": "The problem is — in this position the last part of your intestine, that is the rectum, stays bent.",
+    "flag": ""
+  },
+  {
+    "id": 18,
+    "start": 70.0,
+    "end": 76.0,
+    "hi_clean": "जिसकी वजह से वेस्ट स्मूदली पास नहीं हो पाता और आपको बहुत ज़ोर लगाना पड़ता है।",
+    "te": "దాని వల్ల వేస్ట్ స్మూత్‌గా బయటికి వెళ్లదు, మీరు చాలా ఫోర్స్ పెట్టాల్సి వస్తుంది.",
+    "bt": "Because of that the waste does not go out smoothly, and you have to apply a lot of force.",
+    "flag": ""
+  },
+  {
+    "id": 19,
+    "start": 76.0,
+    "end": 80.0,
+    "hi_clean": "इसीलिए ट्रेडिशनली हमारे देश में इंडियन टॉयलेट्स होते थे,",
+    "te": "అందుకే మన దేశంలో పూర్వం నుంచీ ఇండియన్ టాయిలెట్స్ ఉండేవి.",
+    "bt": "That is why, from earlier times, there used to be Indian toilets in our country.",
+    "flag": ""
+  },
+  {
+    "id": 20,
+    "start": 80.0,
+    "end": 83.0,
+    "hi_clean": "जिनमें हमें स्क्वाट करके बैठना पड़ता था।",
+    "te": "వాటిలో మనం స్క్వాట్ చేసి కూర్చోవాల్సి వచ్చేది.",
+    "bt": "In them we had to sit in a squat.",
+    "flag": ""
+  },
+  {
+    "id": 21,
+    "start": 84.0,
+    "end": 88.0,
+    "hi_clean": "इस पोज़िशन में बेसिकली वो बेंट पाइप सीधा हो जाता था,",
+    "te": "ఈ పొజిషన్‌లో బేసిక్‌గా ఆ వంగిన పైప్ స్ట్రెయిట్ అయిపోయేది.",
+    "bt": "In this position, basically, that bent pipe would become straight.",
+    "flag": ""
+  },
+  {
+    "id": 22,
+    "start": 88.0,
+    "end": 92.0,
+    "hi_clean": "और बॉडी स्टूल को ईज़िली रिलीज़ कर पाती थी, बिना कोई प्रेशर डाले।",
+    "te": "బాడీ ఎలాంటి ప్రెషర్ లేకుండా మోషన్‌ని ఈజీగా రిలీజ్ చేసేసేది.",
+    "bt": "The body would release the motion easily, without any pressure.",
+    "flag": ""
+  },
+  {
+    "id": 23,
+    "start": 92.0,
+    "end": 98.0,
+    "hi_clean": "अरे चिंता मत कीजिए, मैं आपको इंडियन टॉयलेट अपने घर पे इंस्टॉल करने के लिए नहीं बोलूँगी।",
+    "te": "అయ్యో, టెన్షన్ పడకండి — ఇంట్లో ఇండియన్ టాయిలెట్ పెట్టించుకోమని నేను చెప్పను!",
+    "bt": "Oh, do not take tension — I will not tell you to get an Indian toilet installed at home!",
+    "flag": ""
+  },
+  {
+    "id": 24,
+    "start": 98.0,
+    "end": 102.0,
+    "hi_clean": "आप अपने वेस्टर्न टॉयलेट में भी इस स्क्वाट पोज़िशन का बेनिफ़िट ले सकते हैं।",
+    "te": "మీ వెస్ట్రన్ టాయిలెట్‌లోనే ఈ స్క్వాట్ పొజిషన్ బెనిఫిట్ తీసుకోవచ్చు.",
+    "bt": "You can take the benefit of this squat position in your western toilet itself.",
+    "flag": ""
+  },
+  {
+    "id": 25,
+    "start": 102.0,
+    "end": 105.0,
+    "hi_clean": "कैसे? एक फ़ुट स्टूल के ज़रिए।",
+    "te": "ఎలా? ఒక ఫుట్ స్టూల్ ద్వారా.",
+    "bt": "How? Through a foot stool.",
+    "flag": ""
+  },
+  {
+    "id": 26,
+    "start": 105.0,
+    "end": 109.0,
+    "hi_clean": "अपने WC के आगे एक फ़ुट स्टूल रख लीजिए।",
+    "te": "మీ టాయిలెట్ ముందు ఒక ఫుట్ స్టూల్ పెట్టుకోండి.",
+    "bt": "Place a foot stool in front of your toilet.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 27,
+    "start": 109.0,
+    "end": 113.0,
+    "hi_clean": "अगर ये न मिल पाए, तो एक बाल्टी को उल्टा करके भी रख सकते हैं।",
+    "te": "అది దొరక్కపోతే, ఒక బకెట్‌ని బోర్లా పెట్టి కూడా వాడుకోవచ్చు.",
+    "bt": "If that is not available, you can also place a bucket upside down and use it.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 28,
+    "start": 113.0,
+    "end": 118.0,
+    "hi_clean": "इससे आपकी बॉडी को काफ़ी हद तक उसी स्क्वाटिंग पोज़िशन का फ़ायदा मिलता है।",
+    "te": "దీంతో మీ బాడీకి చాలా వరకూ అదే స్క్వాటింగ్ పొజిషన్ బెనిఫిట్ దొరుకుతుంది.",
+    "bt": "With this, your body gets the benefit of that same squatting position to a large extent.",
+    "flag": ""
+  },
+  {
+    "id": 29,
+    "start": 119.0,
+    "end": 122.0,
+    "hi_clean": "अब मुझे पता है, आप में से कुछ लोग क्या सोच रहे होंगे —",
+    "te": "మీలో కొందరు ఏం అనుకుంటున్నారో నాకు తెలుసు —",
+    "bt": "I know what some of you must be thinking —",
+    "flag": ""
+  },
+  {
+    "id": 30,
+    "start": 122.0,
+    "end": 125.0,
+    "hi_clean": "इतनी छोटी सी चीज़ बदलने से क्या ही फ़र्क़ पड़ेगा?",
+    "te": "ఇంత చిన్న విషయం మార్చితే ఏం తేడా వస్తుందిలే అని, కదా?",
+    "bt": "What difference will changing such a small thing make anyway, right?",
+    "flag": ""
+  },
+  {
+    "id": 31,
+    "start": 125.0,
+    "end": 130.0,
+    "hi_clean": "वेल, फ़र्क़ पड़ेगा। इन फ़ैक्ट, फ़ुट स्टूल पे तो काफ़ी रिसर्च भी की गई है,",
+    "te": "తేడా వస్తుంది! నిజానికి ఫుట్ స్టూల్ మీద చాలా రీసెర్చ్ కూడా జరిగింది.",
+    "bt": "It will make a difference! In fact, a lot of research has also been done on the foot stool.",
+    "flag": ""
+  },
+  {
+    "id": 32,
+    "start": 130.0,
+    "end": 137.0,
+    "hi_clean": "जो बताती है कि जिन लोगों ने इसको यूज़ किया, उनको मोशन पास करने में पहले से सिर्फ़ आधा समय लगा।",
+    "te": "అందులో తేలిందేంటంటే — దీన్ని వాడిన వాళ్లకి మోషన్ పాస్ అవ్వడానికి ముందు కంటే సగం టైమే పట్టింది.",
+    "bt": "What came out in it is — for those who used this, passing motion took only half the time compared to before.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 33,
+    "start": 137.0,
+    "end": 144.0,
+    "hi_clean": "उन्हें ज़ोर कम लगाना पड़ा, और उठने के बाद उनको बॉडी में ज़्यादा ख़ालीपन और मन में ज़्यादा सैटिस्फ़ैक्शन फ़ील हुआ।",
+    "te": "వాళ్లు తక్కువ ఫోర్స్ పెట్టాల్సి వచ్చింది — లేచాక బాడీ ఖాళీగా, తేలిగ్గా అనిపించింది, మనసుకి ఎక్కువ శాటిస్‌ఫాక్షన్ దొరికింది.",
+    "bt": "They had to apply less force — after getting up the body felt empty and light, and the mind got more satisfaction.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 34,
+    "start": 145.0,
+    "end": 149.0,
+    "hi_clean": "तो आप भी आज से ही इस फ़ुट स्टूल को यूज़ करना शुरू करें।",
+    "te": "కాబట్టి మీరు కూడా ఈ రోజు నుంచే ఫుట్ స్టూల్ వాడడం స్టార్ట్ చేయండి.",
+    "bt": "So you too start using the foot stool from today itself.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 35,
+    "start": 149.0,
+    "end": 153.0,
+    "hi_clean": "अगले स्टेप पर बढ़ने से पहले एक चीज़ समझना बहुत ज़रूरी है —",
+    "te": "నెక్స్ట్ స్టెప్‌కి వెళ్లే ముందు ఒక విషయం అర్థం చేసుకోవడం చాలా ముఖ్యం —",
+    "bt": "Before going to the next step, it is very important to understand one thing —",
+    "flag": ""
+  },
+  {
+    "id": 36,
+    "start": 153.0,
+    "end": 156.0,
+    "hi_clean": "ये पेट साफ़ न होने की प्रॉब्लम होती क्यों है?",
+    "te": "కడుపు శుభ్రం అవ్వకపోవడం ఎందుకు జరుగుతుంది?",
+    "bt": "Why does the stomach not getting cleared happen?",
+    "flag": "",
+    "te_orig": "అసలు కడుపు శుభ్రం అవ్వకపోవడం అనే ప్రాబ్లమ్ ఎందుకు వస్తుంది?"
+  },
+  {
+    "id": 37,
+    "start": 156.0,
+    "end": 159.0,
+    "hi_clean": "देखिए, जब हम शरीर को एक्सरसाइज़ नहीं देते,",
+    "te": "చూడండి, మనం బాడీకి ఎక్సర్‌సైజ్ ఇవ్వనప్పుడు,",
+    "bt": "See, when we do not give the body exercise,",
+    "flag": ""
+  },
+  {
+    "id": 38,
+    "start": 159.0,
+    "end": 162.0,
+    "hi_clean": "जब हम ज़्यादातर ऐसा खाना खाते हैं जिसमें पानी कम होता है,",
+    "te": "నీళ్ల శాతం తక్కువుండే ఫుడ్ ఎక్కువ తిన్నప్పుడు,",
+    "bt": "When we eat mostly food with low water percentage,",
+    "flag": ""
+  },
+  {
+    "id": 39,
+    "start": 162.0,
+    "end": 164.0,
+    "hi_clean": "या जब हम बहुत स्ट्रेस लेते हैं,",
+    "te": "లేదా బాగా స్ట్రెస్ తీసుకున్నప్పుడు,",
+    "bt": "Or when we take a lot of stress,",
+    "flag": ""
+  },
+  {
+    "id": 40,
+    "start": 164.0,
+    "end": 169.0,
+    "hi_clean": "या अगर हम रिपीटेडली अपनी बॉडी के मोशन पास करने के सिग्नल को इग्नोर करते रहते हैं —",
+    "te": "లేదా మోషన్‌కి వెళ్లమని బాడీ ఇచ్చే సిగ్నల్‌ని మళ్లీ మళ్లీ ఇగ్నోర్ చేస్తున్నప్పుడు —",
+    "bt": "Or when we keep ignoring, again and again, the signal the body gives to go for motion —",
+    "flag": ""
+  },
+  {
+    "id": 41,
+    "start": 169.0,
+    "end": 174.0,
+    "hi_clean": "इनमें से किसी एक रीज़न की वजह से भी शरीर वेस्ट को ढंग से एलिमिनेट नहीं कर पाता।",
+    "te": "వీటిలో ఏ ఒక్క కారణం వల్లనైనా బాడీ వేస్ట్‌ని సరిగ్గా బయటికి పంపలేకపోతుంది.",
+    "bt": "Due to even one of these reasons, the body becomes unable to send the waste out properly.",
+    "flag": ""
+  },
+  {
+    "id": 42,
+    "start": 174.0,
+    "end": 178.0,
+    "hi_clean": "नैचुरली वो हमारी इंटेस्टाइन की दीवार पर चिपक जाता है।",
+    "te": "సహజంగానే అది మన పేగుల గోడలకి అంటుకుపోతుంది.",
+    "bt": "Naturally, it sticks to the walls of our intestines.",
+    "flag": ""
+  },
+  {
+    "id": 43,
+    "start": 178.0,
+    "end": 183.0,
+    "hi_clean": "वक़्त के साथ हम अपनी आदतें तो बदलते नहीं, तो ये लेयर बढ़ती रहती है।",
+    "te": "టైమ్‌తో పాటు మన అలవాట్లు మారవు కదా — దాంతో ఈ లేయర్ పెరుగుతూనే ఉంటుంది.",
+    "bt": "With time our habits do not change, right — so this layer keeps growing.",
+    "flag": ""
+  },
+  {
+    "id": 44,
+    "start": 214.0,
+    "end": 219.0,
+    "hi_clean": "आपको पता है, आपका कोलन आपकी बॉडी के हर सेल और टिशू से कनेक्टेड है।",
+    "te": "మీకు తెలుసా? మీ కోలన్ మీ బాడీలోని ప్రతి సెల్‌తో, టిష్యూతో కనెక్ట్ అయి ఉంది.",
+    "bt": "Do you know? Your colon is connected with every cell and tissue in your body.",
+    "flag": "term-choice"
+  },
+  {
+    "id": 45,
+    "start": 219.0,
+    "end": 225.0,
+    "hi_clean": "अगर यहाँ गड़बड़ होगी, तो वो शरीर के अलग-अलग हिस्सों में डिस्टर्बेंस लाएगी ही लाएगी।",
+    "te": "ఇక్కడ ఏదైనా తేడా జరిగితే, అది బాడీలో వేరే వేరే చోట్ల డిస్టర్బెన్స్ తెచ్చి తీరుతుంది.",
+    "bt": "If something goes wrong here, it will definitely bring disturbance in different places in the body.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 46,
+    "start": 225.0,
+    "end": 230.0,
+    "hi_clean": "क्योंकि वो वेस्ट अंदर सड़ने लगता है, टॉक्सिन्स प्रोड्यूस करता है।",
+    "te": "ఎందుకంటే ఆ వేస్ట్ లోపల కుళ్లిపోవడం స్టార్ట్ అవుతుంది, టాక్సిన్స్ ప్రొడ్యూస్ చేస్తుంది.",
+    "bt": "Because that waste starts rotting inside, and produces toxins.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 47,
+    "start": 243.0,
+    "end": 250.0,
+    "hi_clean": "जो भी हमारा वीकेस्ट ऑर्गन होता है, ये टॉक्सिन्स उसकी फ़ंक्शनिंग को डिस्टर्ब करते हैं और उसमें बीमारी लाते हैं।",
+    "te": "మన బాడీలో ఏ ఆర్గన్ వీక్‌గా ఉంటుందో — ఈ టాక్సిన్స్ దాని ఫంక్షనింగ్‌ని డిస్టర్బ్ చేసి, అక్కడ జబ్బు తీసుకొస్తాయి.",
+    "bt": "Whichever organ in our body is weak — these toxins disturb its functioning and bring illness there.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 48,
+    "start": 250.0,
+    "end": 254.0,
+    "hi_clean": "इसीलिए तो कॉन्स्टिपेशन को मदर ऑफ़ ऑल डिज़ीज़ेज़ बोला जाता है।",
+    "te": "అందుకే మలబద్ధకాన్ని అన్ని రోగాలకూ తల్లి అంటారు.",
+    "bt": "That is why constipation is called the mother of all diseases.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 49,
+    "start": 254.0,
+    "end": 265.0,
+    "hi_clean": "मेरा आपको ये सब बताने का इंटेंशन सिर्फ़ ये है कि आप इस प्रॉब्लम को प्लीज़ लाइटली न लें, टालते न रहें, ऐक्शन लें, और उसको पूरी तरह हील करें।",
+    "te": "నేను ఇదంతా చెప్పడంలో ఉద్దేశం ఒక్కటే — ప్లీజ్, ఈ ప్రాబ్లమ్‌ని లైట్‌గా తీసుకోకండి, వాయిదా వేస్తూ ఉండకండి. యాక్షన్ తీసుకోండి, దీన్ని పూర్తిగా హీల్ చేసుకోండి.",
+    "bt": "My only intention in telling you all this is — please do not take this problem lightly, do not keep postponing. Take action, and heal it completely.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 50,
+    "start": 265.0,
+    "end": 267.0,
+    "hi_clean": "चलिए, बढ़ें अपने सेकंड स्टेप पे?",
+    "te": "పదండి, మన సెకండ్ స్టెప్‌కి వెళ్దామా?",
+    "bt": "Come, shall we go to our second step?",
+    "flag": ""
+  },
+  {
+    "id": 51,
+    "start": 267.0,
+    "end": 272.0,
+    "hi_clean": "वो है — कंज़्यूम एट लीस्ट वन क्लेंज़िंग ड्रिंक पर डे।",
+    "te": "అదే — రోజుకి కనీసం ఒక క్లెన్సింగ్ డ్రింక్ తాగడం.",
+    "bt": "That is — drinking at least one cleansing drink per day.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 52,
+    "start": 272.0,
+    "end": 279.0,
+    "hi_clean": "अब मैं आपके साथ ऐसे तीन जूसेस और एक स्पेशल टी के बारे में शेयर करने वाली हूँ, जो आपके लिए बहुत बेनिफ़िशियल होंगे।",
+    "te": "ఇప్పుడు మీకు చాలా బెనిఫిషియల్‌గా ఉండే మూడు జ్యూస్‌లు, ఒక స్పెషల్ టీ గురించి షేర్ చేయబోతున్నాను.",
+    "bt": "Now I am going to share with you three juices and one special tea that will be very beneficial for you.",
+    "flag": ""
+  },
+  {
+    "id": 53,
+    "start": 280.0,
+    "end": 286.0,
+    "hi_clean": "पहला — सफ़ेद पेठे का जूस, यानी ऐश गार्ड जूस। ये ऐश गार्ड आपको किसी भी सब्ज़ी वाले के पास मिल जाएगा।",
+    "te": "మొదటిది — బూడిద గుమ్మడికాయ జ్యూస్, అంటే యాష్ గోర్డ్ జ్యూస్. ఇది మీకు ఏ కూరగాయల షాపులోనైనా దొరికేస్తుంది.",
+    "bt": "First — ash gourd (boodida gummadikaya) juice, that is 'ash gourd' juice. You will easily get this at any vegetable shop.",
+    "flag": "term-choice"
+  },
+  {
+    "id": 54,
+    "start": 286.0,
+    "end": 291.0,
+    "hi_clean": "छिलका और बीज हटाओ, ब्लेंड करो, छान लो — और हो गया आपका जूस रेडी।",
+    "te": "తొక్క, గింజలు తీసేసి, బ్లెండ్ చేసి, వడకట్టండి — అంతే, మీ జ్యూస్ రెడీ!",
+    "bt": "Remove the peel and seeds, blend, strain — that is it, your juice is ready!",
+    "flag": "health-claim"
+  },
+  {
+    "id": 55,
+    "start": 291.0,
+    "end": 295.0,
+    "hi_clean": "आँवला जूस — ये आपकी डाइजेस्टिव फ़ायर को बढ़ाता है,",
+    "te": "ఉసిరి జ్యూస్ — ఇది మీ డైజెస్టివ్ ఫైర్‌ని పెంచుతుంది,",
+    "bt": "Amla (usiri) juice — this increases your digestive fire,",
+    "flag": "health-claim"
+  },
+  {
+    "id": 56,
+    "start": 295.0,
+    "end": 299.0,
+    "hi_clean": "जो अल्टिमेटली डाइजेशन और बावेल क्लियरिंग दोनों में हेल्प करता है।",
+    "te": "అది డైజెషన్‌కీ, కడుపు క్లియర్ అవ్వడానికీ — రెండింటికీ హెల్ప్ చేస్తుంది.",
+    "bt": "That helps both digestion and the stomach getting cleared.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 57,
+    "start": 299.0,
+    "end": 307.0,
+    "hi_clean": "तीन आँवला पानी के साथ ब्लेंड करो, छान लो, फिर दो-तीन गुना और पानी मिलाके पी लो।",
+    "te": "మూడు ఉసిరికాయల్ని నీళ్లతో బ్లెండ్ చేసి, వడకట్టి, తర్వాత రెండు మూడు రెట్లు నీళ్లు కలిపి తాగేయండి.",
+    "bt": "Blend three amla fruits with water, strain, then add two to three times more water and drink it up.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 58,
+    "start": 308.0,
+    "end": 311.0,
+    "hi_clean": "कोकोनट वॉटर विद सब्जा सीड्स।",
+    "te": "సబ్జా గింజలతో కొబ్బరి నీళ్లు.",
+    "bt": "Coconut water with sabja seeds.",
+    "flag": ""
+  },
+  {
+    "id": 59,
+    "start": 311.0,
+    "end": 315.0,
+    "hi_clean": "कोकोनट वॉटर अपने आप में ही माइल्डली लैक्सेटिव होता है।",
+    "te": "కొబ్బరి నీళ్లు అసలే నేచురల్‌గా మైల్డ్ లాక్సేటివ్‌లా పని చేస్తాయి.",
+    "bt": "Coconut water by itself naturally works like a mild laxative.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 60,
+    "start": 315.0,
+    "end": 318.0,
+    "hi_clean": "उसमें एक चौथाई चम्मच सब्जा सीड्स मिला लो।",
+    "te": "అందులో పావు స్పూను సబ్జా గింజలు కలిపేయండి.",
+    "bt": "Mix in a quarter spoon of sabja seeds in it.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 61,
+    "start": 318.0,
+    "end": 320.0,
+    "hi_clean": "पाँच मिनट में ही वो स्वेल हो जाते हैं।",
+    "te": "ఐదు నిమిషాల్లోనే అవి ఉబ్బిపోతాయి.",
+    "bt": "Within just five minutes they swell up.",
+    "flag": ""
+  },
+  {
+    "id": 62,
+    "start": 320.0,
+    "end": 324.0,
+    "hi_clean": "ये भी आपके गट को क्लीन करने में बहुत मदद करते हैं।",
+    "te": "ఇవి కూడా మీ గట్‌ని క్లీన్ చేయడంలో బాగా హెల్ప్ చేస్తాయి.",
+    "bt": "These also help a lot in cleaning your gut.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 63,
+    "start": 324.0,
+    "end": 326.0,
+    "hi_clean": "और फ़ोर्थ — फ़ेनल टी।",
+    "te": "ఇక ఫోర్త్ — ఫెన్నెల్ టీ.",
+    "bt": "And fourth — fennel tea.",
+    "flag": ""
+  },
+  {
+    "id": 64,
+    "start": 326.0,
+    "end": 329.0,
+    "hi_clean": "फ़ेनल यानी सौंफ़ — वही स्पेशल हर्ब है,",
+    "te": "ఫెన్నెల్ అంటే సోంపు — అదే ఆ స్పెషల్ హెర్బ్!",
+    "bt": "Fennel means sompu — that itself is the special herb!",
+    "flag": "term-choice"
+  },
+  {
+    "id": 65,
+    "start": 329.0,
+    "end": 332.0,
+    "hi_clean": "जो आपके डाइजेस्टिव सीक्रीशन्स को बढ़ाता है,",
+    "te": "అది మీ డైజెస్టివ్ సీక్రెషన్స్‌ని పెంచుతుంది,",
+    "bt": "It increases your digestive secretions,",
+    "flag": "health-claim"
+  },
+  {
+    "id": 66,
+    "start": 332.0,
+    "end": 334.0,
+    "hi_clean": "जिससे आपकी अग्नि और इंप्रूव होती है,",
+    "te": "దాంతో మీ అగ్ని ఇంకా ఇంప్రూవ్ అవుతుంది,",
+    "bt": "With that your agni improves further,",
+    "flag": "health-claim"
+  },
+  {
+    "id": 67,
+    "start": 334.0,
+    "end": 336.0,
+    "hi_clean": "और बावेल्स और ईज़िली क्लियर हो पाते हैं।",
+    "te": "మోషన్ ఇంకా ఈజీగా అయిపోతుంది.",
+    "bt": "Motion happens even more easily.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 68,
+    "start": 336.0,
+    "end": 338.0,
+    "hi_clean": "फ़ेनल टी बनाने के लिए, सिंपली —",
+    "te": "ఫెన్నెల్ టీ చేయడానికి, సింపుల్‌గా —",
+    "bt": "To make fennel tea, simply —",
+    "flag": ""
+  },
+  {
+    "id": 69,
+    "start": 338.0,
+    "end": 341.0,
+    "hi_clean": "आधा टीस्पून सौंफ़ को एक कप पानी में उबाल लें,",
+    "te": "అర టీస్పూను సోంపుని ఒక కప్పు నీళ్లలో మరిగించండి,",
+    "bt": "Boil half a teaspoon of sompu in one cup of water,",
+    "flag": "health-claim"
+  },
+  {
+    "id": 70,
+    "start": 341.0,
+    "end": 343.0,
+    "hi_clean": "और फिर कप में निकाल लें।",
+    "te": "తర్వాత కప్పులో వంపుకోండి.",
+    "bt": "Then pour it into a cup.",
+    "flag": ""
+  },
+  {
+    "id": 71,
+    "start": 343.0,
+    "end": 345.0,
+    "hi_clean": "इसको छानने की कोई ज़रूरत नहीं।",
+    "te": "దీన్ని వడకట్టాల్సిన అవసరం కూడా లేదు.",
+    "bt": "There is no need even to strain this.",
+    "flag": ""
+  },
+  {
+    "id": 72,
+    "start": 345.0,
+    "end": 348.0,
+    "hi_clean": "आप इन तीन में से किसी भी एक जूस को —",
+    "te": "ఈ మూడు జ్యూస్‌లలో ఏదో ఒకటి —",
+    "bt": "Any one of these three juices —",
+    "flag": ""
+  },
+  {
+    "id": 73,
+    "start": 349.0,
+    "end": 351.0,
+    "hi_clean": "जो आपके लिए ईज़िली अवेलेबल हो —",
+    "te": "మీకు ఈజీగా దొరికేది —",
+    "bt": "Whichever is easily available to you —",
+    "flag": ""
+  },
+  {
+    "id": 74,
+    "start": 351.0,
+    "end": 353.0,
+    "hi_clean": "उसको सुबह पी लीजिए,",
+    "te": "పొద్దున్నే తాగేయండి,",
+    "bt": "Drink it up in the morning,",
+    "flag": "health-claim"
+  },
+  {
+    "id": 75,
+    "start": 353.0,
+    "end": 355.0,
+    "hi_clean": "अपने ब्रेकफ़ास्ट से एक-डेढ़ घंटे पहले।",
+    "te": "మీ బ్రేక్‌ఫాస్ట్‌కి గంట, గంటన్నర ముందు.",
+    "bt": "An hour or an hour and a half before your breakfast.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 76,
+    "start": 355.0,
+    "end": 358.0,
+    "hi_clean": "और फिर एक बड़ा टम्बलर इस चाय का बनाके रख लीजिए,",
+    "te": "తర్వాత ఈ టీని ఒక పెద్ద టంబ్లర్‌లో చేసి పెట్టుకోండి,",
+    "bt": "Then make this tea in a big tumbler and keep it,",
+    "flag": ""
+  },
+  {
+    "id": 77,
+    "start": 358.0,
+    "end": 360.0,
+    "hi_clean": "जिसमें ये गरम रहे।",
+    "te": "అందులో అది వేడిగా ఉంటుంది.",
+    "bt": "In it, it stays hot.",
+    "flag": ""
+  },
+  {
+    "id": 78,
+    "start": 360.0,
+    "end": 363.0,
+    "hi_clean": "और पूरे दिन आप थोड़ी-थोड़ी चाय सिप करते रह सकते हैं।",
+    "te": "రోజంతా కొంచెం కొంచెం సిప్ చేస్తూ ఉండొచ్చు.",
+    "bt": "You can keep sipping little by little all day.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 79,
+    "start": 363.0,
+    "end": 365.0,
+    "hi_clean": "अब, जब हम डॉक्टर्स के पास जाते हैं,",
+    "te": "ఇక మనం డాక్టర్ల దగ్గరికి వెళ్లినప్పుడు,",
+    "bt": "Now, when we go to the doctors,",
+    "flag": ""
+  },
+  {
+    "id": 80,
+    "start": 365.0,
+    "end": 368.0,
+    "hi_clean": "वो हमें अक्सर एक ऐसी चीज़ प्रिस्क्राइब करते हैं,",
+    "te": "వాళ్లు మనకి తరచూ ఒక వస్తువు ప్రిస్క్రైబ్ చేస్తారు —",
+    "bt": "They often prescribe us one thing —",
+    "flag": ""
+  },
+  {
+    "id": 81,
+    "start": 368.0,
+    "end": 371.0,
+    "hi_clean": "जिससे शॉर्ट टर्म में तो रिलीफ़ मिलता है,",
+    "te": "దానితో షార్ట్ టర్మ్‌లో రిలీఫ్ అయితే దొరుకుతుంది,",
+    "bt": "With it, relief is indeed found in the short term,",
+    "flag": ""
+  },
+  {
+    "id": 82,
+    "start": 371.0,
+    "end": 375.0,
+    "hi_clean": "लेकिन जैसे ही लेना बंद करो, प्रॉब्लम वापस आ जाती है।",
+    "te": "కానీ తీసుకోవడం ఆపగానే ప్రాబ్లమ్ మళ్లీ వచ్చేస్తుంది.",
+    "bt": "But as soon as you stop taking it, the problem comes right back.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 83,
+    "start": 375.0,
+    "end": 377.0,
+    "hi_clean": "हम बात कर रहे हैं लैक्सेटिव्स की।",
+    "te": "ఇది లాక్సేటివ్స్ గురించి.",
+    "bt": "This is about laxatives.",
+    "flag": "",
+    "te_orig": "మనం మాట్లాడుతున్నది లాక్సేటివ్స్ గురించి."
+  },
+  {
+    "id": 84,
+    "start": 377.0,
+    "end": 381.0,
+    "hi_clean": "जब आप इनको लेते हैं, बॉडी को इनकी आदत लग जाती है।",
+    "te": "వీటిని తీసుకుంటూ ఉంటే, బాడీకి వీటి అలవాటు పడిపోతుంది.",
+    "bt": "If you keep taking these, the body gets habituated to them.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 85,
+    "start": 381.0,
+    "end": 385.0,
+    "hi_clean": "और एक टाइम बाद बिना लैक्सेटिव्स के मोशन आता ही नहीं।",
+    "te": "కొన్నాళ్లకి లాక్సేటివ్ లేకుండా మోషనే అవ్వదు.",
+    "bt": "After some days, without a laxative, motion just does not happen.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 86,
+    "start": 386.0,
+    "end": 388.0,
+    "hi_clean": "हमें इस साइकिल में नहीं पड़ना।",
+    "te": "మనం ఈ సైకిల్‌లో పడకూడదు.",
+    "bt": "We must not fall into this cycle.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 87,
+    "start": 388.0,
+    "end": 392.0,
+    "hi_clean": "आपकी इंटेस्टाइन को किसी भी चीज़ की आदत नहीं लगने देनी है।",
+    "te": "మీ పేగులకి ఏ వస్తువు అలవాటూ పడనివ్వకూడదు.",
+    "bt": "You must not let your intestines get habituated to anything.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 88,
+    "start": 392.0,
+    "end": 396.0,
+    "hi_clean": "ये जूसेस और हर्बल टी माँ प्रकृति के नैचुरल लैक्सेटिव्स हैं,",
+    "te": "ఈ జ్యూస్‌లు, హెర్బల్ టీ — ఇవి ప్రకృతి తల్లి ఇచ్చిన నేచురల్ లాక్సేటివ్స్.",
+    "bt": "These juices and herbal tea — these are natural laxatives given by mother nature.",
+    "flag": ""
+  },
+  {
+    "id": 89,
+    "start": 396.0,
+    "end": 398.0,
+    "hi_clean": "लेकिन इनकी कभी आदत नहीं लगती।",
+    "te": "కానీ వీటి అలవాటు మాత్రం ఎప్పటికీ పడదు.",
+    "bt": "But one never gets habituated to these.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 90,
+    "start": 398.0,
+    "end": 401.0,
+    "hi_clean": "चलिए बढ़ते हैं अपने थर्ड स्टेप पे —",
+    "te": "పదండి, మన థర్డ్ స్టెప్‌కి వెళ్దాం —",
+    "bt": "Come, let us go to our third step —",
+    "flag": ""
+  },
+  {
+    "id": 91,
+    "start": 401.0,
+    "end": 403.0,
+    "hi_clean": "ईट मोर वॉटर-रिच फ़ूड।",
+    "te": "వాటర్-రిచ్ ఫుడ్ ఎక్కువ తినడం.",
+    "bt": "Eating more water-rich food.",
+    "flag": "length-risk"
+  },
+  {
+    "id": 92,
+    "start": 403.0,
+    "end": 406.0,
+    "hi_clean": "देखिए, फ़ूड दो तरह के होते हैं —",
+    "te": "చూడండి, ఫుడ్ రెండు రకాలు —",
+    "bt": "See, food is of two kinds —",
+    "flag": ""
+  },
+  {
+    "id": 93,
+    "start": 406.0,
+    "end": 408.0,
+    "hi_clean": "वॉटर-रिच और वॉटर-पुअर।",
+    "te": "వాటర్-రిచ్, వాటర్-పూర్.",
+    "bt": "Water-rich and water-poor.",
+    "flag": ""
+  },
+  {
+    "id": 94,
+    "start": 408.0,
+    "end": 410.0,
+    "hi_clean": "वॉटर-रिच वो होते हैं जिनमें रस भरा होता है,",
+    "te": "వాటర్-రిచ్ అంటే రసం నిండి ఉండేవి,",
+    "bt": "Water-rich means those filled with juice,",
+    "flag": ""
+  },
+  {
+    "id": 95,
+    "start": 410.0,
+    "end": 412.0,
+    "hi_clean": "जैसे सभी फ्रूट्स —",
+    "te": "అంటే అన్ని పండ్లూ —",
+    "bt": "That is, all fruits —",
+    "flag": ""
+  },
+  {
+    "id": 96,
+    "start": 412.0,
+    "end": 415.0,
+    "hi_clean": "पपीता, तरबूज़, ख़रबूजा, संतरा, सेब, अंगूर, पाइनैपल, बेरीज़।",
+    "te": "బొప్పాయి, పుచ్చకాయ, కర్బూజా, నారింజ, ఆపిల్, ద్రాక్ష, పైనాపిల్, బెర్రీస్.",
+    "bt": "Papaya, watermelon, muskmelon, orange, apple, grapes, pineapple, berries.",
+    "flag": "length-risk"
+  },
+  {
+    "id": 97,
+    "start": 416.0,
+    "end": 418.0,
+    "hi_clean": "और साथ ही ज़्यादातर सब्ज़ियाँ —",
+    "te": "అలాగే చాలా వరకూ కూరగాయలు —",
+    "bt": "Likewise, most vegetables —",
+    "flag": ""
+  },
+  {
+    "id": 98,
+    "start": 418.0,
+    "end": 422.0,
+    "hi_clean": "जैसे टमाटर, खीरा, पालक, लौकी, तोरई, बीन्स, टिंडा।",
+    "te": "టమాటా, దోసకాయ, పాలకూర, సొరకాయ, బీరకాయ, బీన్స్, టిండా.",
+    "bt": "Tomato, cucumber, spinach, bottle gourd, ridge gourd, beans, tinda.",
+    "flag": "term-choice"
+  },
+  {
+    "id": 99,
+    "start": 424.0,
+    "end": 427.0,
+    "hi_clean": "अब दूसरी तरफ़, वॉटर-पुअर फ़ूड्स में आते हैं —",
+    "te": "ఇక రెండో వైపు, వాటర్-పూర్ ఫుడ్స్‌లో వస్తాయి —",
+    "bt": "Now on the other side, in water-poor foods come —",
+    "flag": ""
+  },
+  {
+    "id": 100,
+    "start": 427.0,
+    "end": 429.0,
+    "hi_clean": "अनाज, दालें और मेवे।",
+    "te": "ధాన్యాలు, పప్పులు, డ్రై ఫ్రూట్స్.",
+    "bt": "Grains, pulses, dry fruits.",
+    "flag": ""
+  },
+  {
+    "id": 101,
+    "start": 429.0,
+    "end": 436.0,
+    "hi_clean": "जैसे रोटी, चावल, गेहूँ, दाल, छोले, चना, राजमा, लोबिया, रागी, बादाम, पिस्ता, अख़रोट।",
+    "te": "రోటీ, అన్నం, గోధుమ, పప్పు, శనగలు, రాజ్మా, అలసందలు, రాగి, బాదం, పిస్తా, వాల్‌నట్స్.",
+    "bt": "Roti, rice, wheat, dal, chickpeas, rajma, black-eyed peas, ragi, almonds, pistachios, walnuts.",
+    "flag": ""
+  },
+  {
+    "id": 102,
+    "start": 436.0,
+    "end": 441.0,
+    "hi_clean": "अगर आप किसी फ़ूड को सिंपली अपने हाथ में रखो और थोड़ा प्रेस करो —",
+    "te": "ఏదైనా ఫుడ్‌ని సింపుల్‌గా చేతిలో పెట్టుకుని, కొద్దిగా ప్రెస్ చేసి చూడండి —",
+    "bt": "Simply take any food in your hand and press it a little and see —",
+    "flag": ""
+  },
+  {
+    "id": 103,
+    "start": 441.0,
+    "end": 444.0,
+    "hi_clean": "अगर उसमें से रस निकले, तो समझ जाना वो वॉटर-रिच है।",
+    "te": "రసం వస్తే, అది వాటర్-రిచ్ అని అర్థం.",
+    "bt": "If juice comes out, it means it is water-rich.",
+    "flag": ""
+  },
+  {
+    "id": 104,
+    "start": 444.0,
+    "end": 448.0,
+    "hi_clean": "और अगर कुछ न निकले, तो समझ जाना वो एक वॉटर-पुअर फ़ूड है।",
+    "te": "ఏమీ రాకపోతే, అది వాటర్-పూర్ ఫుడ్ అనుకోండి.",
+    "bt": "If nothing comes out, take it that it is a water-poor food.",
+    "flag": ""
+  },
+  {
+    "id": 105,
+    "start": 448.0,
+    "end": 451.0,
+    "hi_clean": "अब शायद आप सोच रहे हों कि वॉटर-पुअर फ़ूड बुरे होते हैं।",
+    "te": "వాటర్-పూర్ ఫుడ్స్ చెడ్డవేమో అని మీరు అనుకోవచ్చు.",
+    "bt": "You might be thinking that water-poor foods are bad.",
+    "flag": ""
+  },
+  {
+    "id": 106,
+    "start": 451.0,
+    "end": 455.0,
+    "hi_clean": "बिल्कुल नहीं — इनका बॉडी में अपना एक बहुत इम्पॉर्टेन्ट रोल होता है।",
+    "te": "అస్సలు కాదు — బాడీలో వీటికీ చాలా ఇంపార్టెంట్ రోల్ ఉంది.",
+    "bt": "Not at all — these too have a very important role in the body.",
+    "flag": ""
+  },
+  {
+    "id": 107,
+    "start": 455.0,
+    "end": 460.0,
+    "hi_clean": "प्रॉब्लम तब होती है जब हमारा पूरा दिन सिर्फ़ इन्हीं पे चलता है।",
+    "te": "ప్రాబ్లమ్ ఎప్పుడంటే — మన రోజంతా వీటి మీదే నడిచినప్పుడు.",
+    "bt": "The problem is when our whole day runs only on these.",
+    "flag": ""
+  },
+  {
+    "id": 108,
+    "start": 460.0,
+    "end": 464.0,
+    "hi_clean": "फ़ॉर एग्ज़ाम्पल, अगर आप एक मिक्सी में सिर्फ़ सूखी चीज़ें डालें —",
+    "te": "ఫర్ ఎగ్జాంపుల్, మిక్సీలో పొడి వస్తువులే వేశారనుకోండి —",
+    "bt": "For example, suppose you put only dry things in the mixer —",
+    "flag": ""
+  },
+  {
+    "id": 109,
+    "start": 464.0,
+    "end": 468.0,
+    "hi_clean": "रोटी, दाल, चावल — ब्लेड कितना भी पावरफ़ुल क्यों न हो,",
+    "te": "రోటీ, పప్పు, అన్నం — బ్లేడ్ ఎంత పవర్‌ఫుల్ అయినా సరే,",
+    "bt": "Roti, dal, rice — no matter how powerful the blade is,",
+    "flag": ""
+  },
+  {
+    "id": 110,
+    "start": 468.0,
+    "end": 470.0,
+    "hi_clean": "कुछ मिक्स हो पाएगा?",
+    "te": "ఏమైనా మిక్స్ అవుతుందా?",
+    "bt": "Will anything get mixed?",
+    "flag": ""
+  },
+  {
+    "id": 111,
+    "start": 470.0,
+    "end": 475.0,
+    "hi_clean": "नहीं। लेकिन वहीं अगर बीच-बीच में थोड़ा टमाटर, खीरा और लौकी डाल दो,",
+    "te": "అవ్వదు. కానీ మధ్య మధ్యలో కాస్త టమాటా, దోసకాయ, సొరకాయ వేస్తే,",
+    "bt": "It will not. But if in between you add a little tomato, cucumber and bottle gourd,",
+    "flag": ""
+  },
+  {
+    "id": 112,
+    "start": 475.0,
+    "end": 478.0,
+    "hi_clean": "सब कुछ आसानी से ब्रेकडाउन हो जाएगा।",
+    "te": "అంతా ఈజీగా బ్రేక్‌డౌన్ అయిపోతుంది.",
+    "bt": "Everything easily breaks down.",
+    "flag": ""
+  },
+  {
+    "id": 113,
+    "start": 478.0,
+    "end": 481.0,
+    "hi_clean": "आपको समझ में आ रहा है मैं क्या बोल रही हूँ?",
+    "te": "నేను చెప్పేది అర్థమవుతోందా?",
+    "bt": "Are you understanding what I am saying?",
+    "flag": ""
+  },
+  {
+    "id": 114,
+    "start": 481.0,
+    "end": 484.0,
+    "hi_clean": "आपके गट में भी कुछ ऐसा ही होता है।",
+    "te": "మీ గట్‌లో కూడా సేమ్ ఇదే జరుగుతుంది.",
+    "bt": "In your gut too, the same thing happens.",
+    "flag": ""
+  },
+  {
+    "id": 115,
+    "start": 484.0,
+    "end": 490.0,
+    "hi_clean": "अगर सिर्फ़ ड्राय वॉटर-पुअर फ़ूड खाते हो, सिस्टम उनको अच्छे से और जल्दी से ब्रेकडाउन नहीं कर पाता,",
+    "te": "డ్రై వాటర్-పూర్ ఫుడ్ మాత్రమే తింటే, సిస్టమ్ దాన్ని సరిగ్గా, త్వరగా బ్రేక్‌డౌన్ చేయలేకపోతుంది,",
+    "bt": "If you eat only dry water-poor food, the system cannot break it down properly and quickly,",
+    "flag": ""
+  },
+  {
+    "id": 116,
+    "start": 490.0,
+    "end": 492.0,
+    "hi_clean": "उसको निकाल नहीं पाता।",
+    "te": "దాన్ని బయటికీ పంపలేకపోతుంది.",
+    "bt": "It cannot send it out either.",
+    "flag": ""
+  },
+  {
+    "id": 117,
+    "start": 492.0,
+    "end": 495.0,
+    "hi_clean": "दूसरी तरफ़, वॉटर-रिच फ़ूड वो मॉइस्चर ऐड करते हैं,",
+    "te": "కానీ వాటర్-రిచ్ ఫుడ్స్ ఆ మాయిశ్చర్‌ని యాడ్ చేస్తాయి,",
+    "bt": "But water-rich foods add that moisture,",
+    "flag": ""
+  },
+  {
+    "id": 118,
+    "start": 495.0,
+    "end": 499.0,
+    "hi_clean": "जो चीज़ों को मूव करने में, डाइजेस्ट करने में हेल्प करता है।",
+    "te": "అది ఫుడ్ కదలడానికీ, డైజెస్ట్ అవ్వడానికీ హెల్ప్ చేస్తుంది.",
+    "bt": "That helps the food to move and to get digested.",
+    "flag": ""
+  },
+  {
+    "id": 119,
+    "start": 499.0,
+    "end": 503.0,
+    "hi_clean": "अब प्रैक्टिकली अपनी डाइट को ज़्यादा वॉटर-रिच बनाएँ कैसे?",
+    "te": "మరి ప్రాక్టికల్‌గా మన డైట్‌ని ఇంకా వాటర్-రిచ్‌గా ఎలా మార్చాలి?",
+    "bt": "Now practically, how to make our diet more water-rich?",
+    "flag": ""
+  },
+  {
+    "id": 120,
+    "start": 503.0,
+    "end": 506.0,
+    "hi_clean": "पहला तरीक़ा है — फ्रूट-बेस्ड ब्रेकफ़ास्ट।",
+    "te": "మొదటి పద్ధతి — ఫ్రూట్ బేస్డ్ బ్రేక్‌ఫాస్ట్.",
+    "bt": "The first method — fruit-based breakfast.",
+    "flag": ""
+  },
+  {
+    "id": 121,
+    "start": 507.0,
+    "end": 511.0,
+    "hi_clean": "कॉन्स्टिपेशन के लिए स्पेसिफ़िकली पपाया सबसे फ़ायदेमंद फ्रूट है।",
+    "te": "మలబద్ధకానికి స్పెసిఫిక్‌గా బొప్పాయి అన్నిటికంటే బెస్ట్ ఫ్రూట్.",
+    "bt": "Specifically for constipation, papaya is the best fruit of all.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 122,
+    "start": 511.0,
+    "end": 514.0,
+    "hi_clean": "लेकिन हाँ, वो अच्छे से राइप होना चाहिए।",
+    "te": "కానీ అది బాగా పండి ఉండాలి, సరేనా?",
+    "bt": "But it should be well ripened, okay?",
+    "flag": ""
+  },
+  {
+    "id": 123,
+    "start": 514.0,
+    "end": 518.0,
+    "hi_clean": "ये आपकी बॉडी में प्रोटीन्स को ब्रेकडाउन करने में मदद करता है,",
+    "te": "ఇది మీ బాడీలో ప్రొటీన్స్ బ్రేక్‌డౌన్ అవ్వడానికి హెల్ప్ చేస్తుంది,",
+    "bt": "This helps proteins break down in your body,",
+    "flag": "health-claim"
+  },
+  {
+    "id": 124,
+    "start": 518.0,
+    "end": 520.0,
+    "hi_clean": "और हार्ड स्टूल को सॉफ़्ट बनाता है।",
+    "te": "హార్డ్ మోషన్‌ని సాఫ్ట్ చేస్తుంది.",
+    "bt": "It makes hard motion soft.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 125,
+    "start": 520.0,
+    "end": 525.0,
+    "hi_clean": "इसके अलावा सेकंड फ्रूट जो कॉन्स्टिपेशन के लिए फ़ायदेमंद है, वो है बनाना।",
+    "te": "ఇంకా, మలబద్ధకానికి మంచి చేసే సెకండ్ ఫ్రూట్ — అరటిపండు.",
+    "bt": "Also, the second fruit that does good for constipation — banana.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 126,
+    "start": 525.0,
+    "end": 528.0,
+    "hi_clean": "लेकिन सिर्फ़ तब, जब आप सुबह एक्सरसाइज़ करते हैं।",
+    "te": "కానీ మీరు పొద్దున్నే ఎక్సర్‌సైజ్ చేస్తేనే.",
+    "bt": "But only if you exercise in the morning.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 127,
+    "start": 528.0,
+    "end": 530.0,
+    "hi_clean": "वरना ये थोड़ा भारी भी हो सकता है।",
+    "te": "లేదంటే హెవీగా అనిపించొచ్చు.",
+    "bt": "Otherwise it can feel heavy.",
+    "flag": "",
+    "te_orig": "లేదంటే ఇది కొంచెం హెవీగా అనిపించొచ్చు."
+  },
+  {
+    "id": 128,
+    "start": 530.0,
+    "end": 533.0,
+    "hi_clean": "तो ब्रेकफ़ास्ट में आपको एक बड़ा फ्रूट प्लैटर लेना है।",
+    "te": "కాబట్టి బ్రేక్‌ఫాస్ట్‌లో మీరు ఒక పెద్ద ఫ్రూట్ ప్లేటర్ తీసుకోవాలి.",
+    "bt": "So in breakfast you should take one big fruit platter.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 129,
+    "start": 533.0,
+    "end": 535.0,
+    "hi_clean": "और इसको और फ़िलिंग बनाने के लिए,",
+    "te": "దీన్ని ఇంకా ఫిల్లింగ్‌గా చేయడానికి,",
+    "bt": "To make this even more filling,",
+    "flag": ""
+  },
+  {
+    "id": 130,
+    "start": 535.0,
+    "end": 539.0,
+    "hi_clean": "इसके साथ मुट्ठी भर सोक्ड नट्स और सीड्स भी ले सकते हैं।",
+    "te": "దీంతో పాటు గుప్పెడు నానబెట్టిన నట్స్, సీడ్స్ కూడా తీసుకోవచ్చు.",
+    "bt": "Along with this you can also take a fistful of soaked nuts and seeds.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 131,
+    "start": 539.0,
+    "end": 544.0,
+    "hi_clean": "एसेंशियली इडली, डोसा, चीला, ब्रेड, टोस्ट, कॉर्नफ्लेक्स — इनकी बजाय,",
+    "te": "అంటే ఇడ్లీ, దోశ, చిల్లా, బ్రెడ్, టోస్ట్, కార్న్‌ఫ్లేక్స్ — వీటికి బదులు,",
+    "bt": "That is, instead of idli, dosa, chilla, bread, toast, cornflakes —",
+    "flag": ""
+  },
+  {
+    "id": 132,
+    "start": 544.0,
+    "end": 546.0,
+    "hi_clean": "फ्रूट-बेस्ड ब्रेकफ़ास्ट लेके देखिए।",
+    "te": "ఫ్రూట్ బేస్డ్ బ్రేక్‌ఫాస్ట్ తీసుకుని చూడండి.",
+    "bt": "Try taking a fruit-based breakfast and see.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 133,
+    "start": 546.0,
+    "end": 549.0,
+    "hi_clean": "आप दिन में ज़्यादा एनर्जेटिक भी फ़ील करेंगे।",
+    "te": "పగలంతా మీరు ఇంకా ఎనర్జిటిక్‌గా కూడా ఫీల్ అవుతారు.",
+    "bt": "You will also feel more energetic through the day.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 134,
+    "start": 549.0,
+    "end": 554.0,
+    "hi_clean": "दूसरा तरीक़ा — लंच और डिनर में सब्ज़ियों का रेशियो डबल कर दीजिए।",
+    "te": "రెండో పద్ధతి — లంచ్, డిన్నర్‌లో కూరగాయల రేషియోని డబుల్ చేసేయండి.",
+    "bt": "Second method — double the ratio of vegetables in lunch and dinner.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 135,
+    "start": 554.0,
+    "end": 560.0,
+    "hi_clean": "अगर आपकी प्लेट में एक पोर्शन अनाज है, एक पोर्शन दाल, तो दो पोर्शन सब्ज़ी रखें।",
+    "te": "మీ ప్లేట్‌లో ఒక పోర్షన్ అన్నం, ఒక పోర్షన్ పప్పు ఉంటే — రెండు పోర్షన్లు కూరగాయలు పెట్టుకోండి.",
+    "bt": "If in your plate there is one portion rice and one portion dal — keep two portions of vegetables.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 136,
+    "start": 560.0,
+    "end": 566.0,
+    "hi_clean": "बेसिकली आपकी लंच और डिनर की प्लेट कुछ ऐसी दिखनी चाहिए।",
+    "te": "బేసిక్‌గా మీ లంచ్, డిన్నర్ ప్లేట్ దాదాపు ఇలా కనిపించాలి.",
+    "bt": "Basically your lunch and dinner plate should look roughly like this.",
+    "flag": ""
+  },
+  {
+    "id": 137,
+    "start": 567.0,
+    "end": 574.0,
+    "hi_clean": "तीसरा — बीच-बीच में ड्राय या पैकेज्ड स्नैक्स की जगह, हाइड्रेटिंग स्नैक्स लीजिए।",
+    "te": "మూడోది — మధ్యలో డ్రై, ప్యాకేజ్డ్ స్నాక్స్‌కి బదులు హైడ్రేటింగ్ స్నాక్స్ తీసుకోండి.",
+    "bt": "Third — in between, instead of dry, packaged snacks, take hydrating snacks.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 138,
+    "start": 574.0,
+    "end": 577.0,
+    "hi_clean": "जैसे फल, खीरे की प्लेट या स्मूदी।",
+    "te": "అంటే పండ్లు, దోసకాయ ముక్కల ప్లేట్, లేదా స్మూతీ.",
+    "bt": "That is, fruits, a plate of cucumber pieces, or a smoothie.",
+    "flag": ""
+  },
+  {
+    "id": 139,
+    "start": 577.0,
+    "end": 581.0,
+    "hi_clean": "एन्श्योर कीजिए कि आपकी स्मूदी ज़्यादा मीठी न हो, वरना आपका ब्लड शुगर स्पाइक हो सकता है।",
+    "te": "మీ స్మూతీ మరీ తియ్యగా లేకుండా చూసుకోండి — లేదంటే మీ బ్లడ్ షుగర్ ఒక్కసారిగా స్పైక్ అవ్వొచ్చు.",
+    "bt": "Make sure your smoothie is not too sweet — otherwise your blood sugar can spike all at once.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 140,
+    "start": 582.0,
+    "end": 585.0,
+    "hi_clean": "एक और फ्रूट जो आपके गट को नैचुरली क्लीन करता है,",
+    "te": "మీ గట్‌ని నేచురల్‌గా క్లీన్ చేసే ఇంకో ఫ్రూట్ ఉంది —",
+    "bt": "There is one more fruit that naturally cleans your gut —",
+    "flag": ""
+  },
+  {
+    "id": 141,
+    "start": 585.0,
+    "end": 589.0,
+    "hi_clean": "और कॉन्स्टिपेशन के लिए बहुत इफ़ेक्टिव है — वो है प्रून्स।",
+    "te": "మలబద్ధకానికి చాలా ఎఫెక్టివ్‌గా పని చేస్తుంది — అవే ప్రూన్స్.",
+    "bt": "It works very effectively for constipation — those are prunes.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 142,
+    "start": 589.0,
+    "end": 593.0,
+    "hi_clean": "यानी ड्राइड प्लम्स, जिन्हें सूखा आलूबुख़ारा भी कहते हैं।",
+    "te": "అంటే డ్రైడ్ ప్లమ్స్ — వీటినే ఎండు ఆల్‌బుఖారా అని కూడా అంటారు.",
+    "bt": "That is, dried plums — these are also called dried aloo bukhara.",
+    "flag": "term-choice"
+  },
+  {
+    "id": 143,
+    "start": 593.0,
+    "end": 597.0,
+    "hi_clean": "आपके प्रून्स बिना शुगर कोटिंग वाले होने चाहिए।",
+    "te": "మీ ప్రూన్స్ షుగర్ కోటింగ్ లేనివి అయి ఉండాలి.",
+    "bt": "Your prunes should be ones without sugar coating.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 144,
+    "start": 597.0,
+    "end": 600.0,
+    "hi_clean": "ये आपको आराम से ऑनलाइन मिल जाएँगे।",
+    "te": "ఇవి మీకు ఈజీగా ఆన్‌లైన్‌లో దొరికేస్తాయి.",
+    "bt": "You will easily get these online.",
+    "flag": ""
+  },
+  {
+    "id": 145,
+    "start": 600.0,
+    "end": 603.0,
+    "hi_clean": "अगर ये प्रून्स थोड़े भी हार्ड हों, तो उन्हें कुछ घंटे सोक करके खाएँ।",
+    "te": "ఒకవేళ ప్రూన్స్ కొంచెం హార్డ్‌గా ఉంటే, కొన్ని గంటలు నానబెట్టి తినండి.",
+    "bt": "In case the prunes are a little hard, soak them for a few hours and eat.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 146,
+    "start": 603.0,
+    "end": 605.0,
+    "hi_clean": "वरना नॉर्मली ऐसे भी खा सकते हैं।",
+    "te": "లేదంటే మామూలుగా అలాగే తినేయొచ్చు.",
+    "bt": "Otherwise you can just eat them normally as they are.",
+    "flag": ""
+  },
+  {
+    "id": 147,
+    "start": 606.0,
+    "end": 609.0,
+    "hi_clean": "तो ये हैं तीन अलग-अलग तरीक़े,",
+    "te": "ఇవే మూడు రకాల పద్ధతులు —",
+    "bt": "So these are the three different methods —",
+    "flag": ""
+  },
+  {
+    "id": 148,
+    "start": 609.0,
+    "end": 612.0,
+    "hi_clean": "अपनी डाइट को और वॉटर-रिच बनाने के लिए।",
+    "te": "మీ డైట్‌ని ఇంకా వాటర్-రిచ్‌గా మార్చడానికి.",
+    "bt": "To make your diet more water-rich.",
+    "flag": ""
+  },
+  {
+    "id": 149,
+    "start": 612.0,
+    "end": 614.0,
+    "hi_clean": "आप फ़ंडामेंटल प्रिंसिपल समझ गए ना?",
+    "te": "బేసిక్ ప్రిన్సిపల్ అర్థమైంది కదా?",
+    "bt": "You understood the basic principle, right?",
+    "flag": ""
+  },
+  {
+    "id": 150,
+    "start": 614.0,
+    "end": 617.0,
+    "hi_clean": "आपको ज़्यादा ऐसा खाना खाना है जो रस से भरा हो।",
+    "te": "రసం ఎక్కువుండే ఫుడ్ ఎక్కువ తినాలి.",
+    "bt": "You should eat more food that has more juice.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 151,
+    "start": 617.0,
+    "end": 619.0,
+    "hi_clean": "सिंपल है।",
+    "te": "సింపుల్!",
+    "bt": "Simple!",
+    "flag": ""
+  },
+  {
+    "id": 152,
+    "start": 620.0,
+    "end": 623.0,
+    "hi_clean": "अच्छा, एक बार जल्दी से उन तीन फ़ूड्स के बारे में भी समझ लेते हैं,",
+    "te": "ఇప్పుడు ఆ మూడు ఫుడ్స్ గురించి తెలుసుకుందాం —",
+    "bt": "Now let us learn about those three foods —",
+    "flag": "",
+    "te_orig": "సరే, ఇప్పుడు ఒకసారి త్వరగా ఆ మూడు ఫుడ్స్ గురించి కూడా తెలుసుకుందాం —"
+  },
+  {
+    "id": 153,
+    "start": 623.0,
+    "end": 626.0,
+    "hi_clean": "जो आपके गट को सबसे ज़्यादा डैमेज करते हैं।",
+    "te": "మీ గట్‌ని అన్నిటికంటే ఎక్కువ డ్యామేజ్ చేసేవి.",
+    "bt": "The ones that damage your gut the most.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 154,
+    "start": 626.0,
+    "end": 629.0,
+    "hi_clean": "पहला — रिफ़ाइंड फ़्लोर, जैसे कि मैदा।",
+    "te": "మొదటిది — రిఫైన్డ్ ఫ్లోర్, అంటే మైదా.",
+    "bt": "First — refined flour, that is, maida.",
+    "flag": ""
+  },
+  {
+    "id": 155,
+    "start": 629.0,
+    "end": 633.0,
+    "hi_clean": "इसमें आ जाती हैं वो सारी चीज़ें जो मैदे से बनती हैं —",
+    "te": "మైదాతో చేసే వస్తువులన్నీ ఇందులోకే వస్తాయి —",
+    "bt": "All the things made with maida come under this —",
+    "flag": ""
+  },
+  {
+    "id": 156,
+    "start": 633.0,
+    "end": 637.0,
+    "hi_clean": "भटूरा, नान, पिज़्ज़ा, पाव, नूडल्स, बिस्किट — बाक़ी तो आपको पता ही है।",
+    "te": "బటూరా, నాన్, పిజ్జా, పావ్, నూడుల్స్, బిస్కెట్లు — మిగతావి మీకు తెలుసుగా.",
+    "bt": "Bhatura, naan, pizza, pav, noodles, biscuits — the rest you know anyway.",
+    "flag": ""
+  },
+  {
+    "id": 157,
+    "start": 637.0,
+    "end": 641.0,
+    "hi_clean": "दूसरा — दूध और दूध से बनी चीज़ें।",
+    "te": "రెండోది — పాలు, పాలతో చేసిన వస్తువులు.",
+    "bt": "Second — milk and things made from milk.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 158,
+    "start": 641.0,
+    "end": 645.0,
+    "hi_clean": "अब मुझे पता है, इस फ़ैक्ट को डाइजेस्ट करना थोड़ा मुश्किल है।",
+    "te": "ఈ ఫ్యాక్ట్‌ని డైజెస్ట్ చేసుకోవడం కొంచెం కష్టమే అని నాకు తెలుసు.",
+    "bt": "I know, digesting this fact is a bit difficult.",
+    "flag": ""
+  },
+  {
+    "id": 159,
+    "start": 646.0,
+    "end": 649.0,
+    "hi_clean": "दूसरा — दूध और दूध से बनी चीज़ें। (ASR में दोहराया गया)",
+    "te": "రెండోది — పాలు, పాలతో చేసిన వస్తువులు.",
+    "bt": "Second — milk and things made from milk. (repeated in ASR)",
+    "flag": "unclear-source"
+  },
+  {
+    "id": 160,
+    "start": 649.0,
+    "end": 653.0,
+    "hi_clean": "अब मुझे पता है, इस फ़ैक्ट को डाइजेस्ट करना थोड़ा मुश्किल है। (ASR में दोहराया गया)",
+    "te": "ఈ ఫ్యాక్ట్‌ని డైజెస్ట్ చేసుకోవడం కొంచెం కష్టమే అని నాకు తెలుసు.",
+    "bt": "I know, digesting this fact is a bit difficult. (repeated in ASR)",
+    "flag": "unclear-source"
+  },
+  {
+    "id": 161,
+    "start": 653.0,
+    "end": 659.0,
+    "hi_clean": "लेकिन सच ये है कि आजकल की सेडेंटरी लाइफ़स्टाइल में ये डेयरी प्रोडक्ट्स हमारा शरीर डाइजेस्ट नहीं कर पाता।",
+    "te": "కానీ నిజం ఏంటంటే — ఈ రోజుల్లోని సెడెంటరీ లైఫ్‌స్టైల్‌లో ఈ డెయిరీ ప్రొడక్ట్స్‌ని మన బాడీ డైజెస్ట్ చేయలేకపోతోంది.",
+    "bt": "But the truth is — in today's sedentary lifestyle, our body is unable to digest these dairy products.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 162,
+    "start": 660.0,
+    "end": 662.0,
+    "hi_clean": "ये अंदर म्यूकस पैदा करते हैं।",
+    "te": "ఇవి లోపల మ్యూకస్ తయారు చేస్తాయి.",
+    "bt": "These create mucus inside.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 163,
+    "start": 662.0,
+    "end": 664.0,
+    "hi_clean": "और तीसरा — मीट।",
+    "te": "ఇక మూడోది — మాంసం.",
+    "bt": "And third — meat.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 164,
+    "start": 664.0,
+    "end": 667.0,
+    "hi_clean": "इसको पूरा डाइजेस्ट होने में तीन दिन तक लग सकते हैं।",
+    "te": "ఇది పూర్తిగా డైజెస్ట్ అవ్వడానికి మూడు రోజుల దాకా పట్టొచ్చు.",
+    "bt": "It can take up to three days to get fully digested.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 165,
+    "start": 667.0,
+    "end": 670.0,
+    "hi_clean": "ये बहुत हैवी होता है और गट को काफ़ी स्लगिश बनाता है।",
+    "te": "ఇది చాలా హెవీ, గట్‌ని బాగా స్లో చేసేస్తుంది.",
+    "bt": "It is very heavy, and it makes the gut quite slow.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 166,
+    "start": 670.0,
+    "end": 674.0,
+    "hi_clean": "मैं जानती हूँ, आपके लिए इनको अवॉइड करना थोड़ा मुश्किल हो सकता है।",
+    "te": "వీటిని అవాయిడ్ చేయడం మీకు కొంచెం కష్టమే అని నాకు తెలుసు.",
+    "bt": "I know, avoiding these is a bit difficult for you.",
+    "flag": ""
+  },
+  {
+    "id": 167,
+    "start": 674.0,
+    "end": 677.0,
+    "hi_clean": "हम फ़ैमिलीज़ के साथ रहते हैं, बाहर जाना होता है।",
+    "te": "మనం ఫ్యామిలీస్‌తో ఉంటాం, బయటికి వెళ్లాల్సి వస్తుంది.",
+    "bt": "We live with families, we have to go out.",
+    "flag": ""
+  },
+  {
+    "id": 168,
+    "start": 677.0,
+    "end": 681.0,
+    "hi_clean": "लेकिन जितना हो सके, आप इनका कंज़म्प्शन कम कीजिए।",
+    "te": "కానీ వీలైనంత వరకూ వీటి కన్సంప్షన్ తగ్గించండి.",
+    "bt": "But as far as possible, reduce their consumption.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 169,
+    "start": 681.0,
+    "end": 684.0,
+    "hi_clean": "ट्रस्ट मी, आपको इंस्टेंट रिज़ल्ट्स दिखेंगे।",
+    "te": "ట్రస్ట్ మీ — మీకు ఇన్‌స్టంట్ రిజల్ట్స్ కనిపిస్తాయి.",
+    "bt": "Trust me — you will see instant results.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 170,
+    "start": 684.0,
+    "end": 688.0,
+    "hi_clean": "आप सोच रहे होंगे, मैं ये सब इतने कॉन्फ़िडेंस से कैसे बोल सकती हूँ?",
+    "te": "ఇదంతా నేను ఇంత కాన్ఫిడెన్స్‌తో ఎలా చెప్తున్నానా అని అనుకుంటున్నారా?",
+    "bt": "Are you wondering how I am saying all this with so much confidence?",
+    "flag": ""
+  },
+  {
+    "id": 171,
+    "start": 688.0,
+    "end": 692.0,
+    "hi_clean": "पिछले आठ सालों में मैंने हज़ारों लोगों को देखा है,",
+    "te": "గత ఎనిమిదేళ్లలో నేను వేల మందిని చూశాను,",
+    "bt": "In the last eight years I have seen thousands of people,",
+    "flag": ""
+  },
+  {
+    "id": 172,
+    "start": 692.0,
+    "end": 697.0,
+    "hi_clean": "जिन्होंने इन्हीं स्टेप्स को फ़ॉलो करके अपने गट इश्यूज़ और कॉन्स्टिपेशन को रिवर्स किया है।",
+    "te": "వాళ్లు ఇవే స్టెప్స్ ఫాలో అయ్యి, తమ గట్ ఇష్యూస్‌ని, మలబద్ధకాన్ని రివర్స్ చేసుకున్నారు.",
+    "bt": "They followed these very steps and reversed their gut issues and constipation.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 173,
+    "start": 697.0,
+    "end": 700.0,
+    "hi_clean": "चलिए उनमें से कुछ लोगों से मिलते हैं, और फिर आगे बढ़ेंगे।",
+    "te": "పదండి, వాళ్లలో కొందర్ని కలుద్దాం — తర్వాత ముందుకెళ్దాం.",
+    "bt": "Come, let us meet some of them — then we will move ahead.",
+    "flag": ""
+  },
+  {
+    "id": 174,
+    "start": 731.0,
+    "end": 738.0,
+    "hi_clean": "(टेस्टिमोनियल, ऑडियो अस्पष्ट) ...मेरी प्रॉब्लम बढ़ती ही जा रही थी...",
+    "te": "నా ప్రాబ్లమ్ రోజురోజుకీ పెరిగిపోతూ వచ్చింది.",
+    "bt": "My problem kept increasing day by day.",
+    "flag": "unclear-source"
+  },
+  {
+    "id": 175,
+    "start": 738.0,
+    "end": 742.0,
+    "hi_clean": "'ऐश गार्ड जूस पियो, फ्रूट खाओ' — तो मैंने ये सब ट्राय किया।",
+    "te": "యాష్ గోర్డ్ జ్యూస్ తాగండి, ఫ్రూట్స్ తినండి అన్నారు — నేను ఇవన్నీ ట్రై చేశాను.",
+    "bt": "They said drink ash gourd juice, eat fruits — I tried all of this.",
+    "flag": "unclear-source"
+  },
+  {
+    "id": 176,
+    "start": 742.0,
+    "end": 746.0,
+    "hi_clean": "पंद्रह दिन के अंदर-अंदर मेरी सारी प्रॉब्लम्स दूर हो गई थीं।",
+    "te": "పదిహేను రోజుల్లోపే నా ప్రాబ్లమ్స్ అన్నీ పోయాయి.",
+    "bt": "Within fifteen days all my problems went away.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 177,
+    "start": 746.0,
+    "end": 747.72,
+    "hi_clean": "मुझे जल्दी टायर्ड फ़ील हो रहा था। (ऑडियो अस्पष्ट)",
+    "te": "నాకు త్వరగా అలసట వచ్చేసేది.",
+    "bt": "I used to get tired quickly.",
+    "flag": "unclear-source"
+  },
+  {
+    "id": 178,
+    "start": 747.72,
+    "end": 749.76,
+    "hi_clean": "ऐश गार्ड जूस ने मुझे रियली हेल्प किया। (ऑडियो अस्पष्ट)",
+    "te": "యాష్ గోర్డ్ జ్యూస్ హెల్ప్ చేసింది.",
+    "bt": "Ash gourd juice helped.",
+    "flag": "unclear-source",
+    "te_orig": "యాష్ గోర్డ్ జ్యూస్ నిజంగా బాగా హెల్ప్ చేసింది."
+  },
+  {
+    "id": 179,
+    "start": 749.76,
+    "end": 751.84,
+    "hi_clean": "जितना आप अपने शरीर के लिए केयर करोगे,",
+    "te": "మీరు మీ బాడీని ఎంత కేర్ చేస్తే,",
+    "bt": "The more you care for your body,",
+    "flag": ""
+  },
+  {
+    "id": 180,
+    "start": 751.84,
+    "end": 753.36,
+    "hi_clean": "वो भी आपको उतना ही केयर करेगा।",
+    "te": "అదీ మిమ్మల్ని కేర్ చేస్తుంది.",
+    "bt": "It too cares for you.",
+    "flag": "length-risk",
+    "te_orig": "అదీ మిమ్మల్ని అంతే కేర్ చేస్తుంది."
+  },
+  {
+    "id": 181,
+    "start": 753.36,
+    "end": 754.6,
+    "hi_clean": "लाइफ़ बहुत ईज़ी हो गई है।",
+    "te": "లైఫ్ చాలా ఈజీ అయిపోయింది.",
+    "bt": "Life has become very easy.",
+    "flag": "length-risk"
+  },
+  {
+    "id": 182,
+    "start": 754.6,
+    "end": 757.68,
+    "hi_clean": "आपको ख़ुद फ़ील होगा कि आप अंदर से फ्रेश फ़ील कर रहे हैं।",
+    "te": "లోపల నుంచి ఫ్రెష్‌గా ఫీల్ అవుతారు.",
+    "bt": "You will feel fresh from inside.",
+    "flag": "",
+    "te_orig": "మీరు లోపల నుంచి ఫ్రెష్‌గా ఫీల్ అవుతున్నట్టు మీకే తెలుస్తుంది."
+  },
+  {
+    "id": 183,
+    "start": 757.68,
+    "end": 760.16,
+    "hi_clean": "मुझे जल्दी टायर्ड फ़ील हो रहा था। (ASR में दोहराया गया, ऑडियो अस्पष्ट)",
+    "te": "నాకు త్వరగా అలసట వచ్చేసేది.",
+    "bt": "I used to get tired quickly. (repeated in ASR)",
+    "flag": "unclear-source"
+  },
+  {
+    "id": 184,
+    "start": 760.16,
+    "end": 761.24,
+    "hi_clean": "मुझे जल्दी टायर्ड फ़ील हो रहा था। (ASR में दोहराया गया, ऑडियो अस्पष्ट)",
+    "te": "త్వరగా అలసట వచ్చేసేది.",
+    "bt": "Used to get tired quickly. (repeated in ASR)",
+    "flag": "unclear-source"
+  },
+  {
+    "id": 185,
+    "start": 762.12,
+    "end": 766.8,
+    "hi_clean": "आइए, बढ़ते हैं अपने फ़ोर्थ स्टेप पे — और वो है मूवमेंट।",
+    "te": "రండి, మన ఫోర్త్ స్టెప్‌కి వెళ్దాం — అదే మూవ్‌మెంట్.",
+    "bt": "Come, let us go to our fourth step — that is movement.",
+    "flag": ""
+  },
+  {
+    "id": 186,
+    "start": 767.0,
+    "end": 769.88,
+    "hi_clean": "एक्सरसाइज़ आपकी हेल्थ के लिए अच्छी है — ये तो आपको पता है।",
+    "te": "ఎక్సర్‌సైజ్ మీ హెల్త్‌కి మంచిది — అది మీకు తెలుసు.",
+    "bt": "Exercise is good for your health — that you know.",
+    "flag": "unclear-source"
+  },
+  {
+    "id": 187,
+    "start": 769.88,
+    "end": 773.36,
+    "hi_clean": "लेकिन फिर भी मैं आपके लिए दो स्टडीज़ नीचे लिंक कर रही हूँ,",
+    "te": "అయినా సరే, మీ కోసం రెండు స్టడీస్‌ని కింద లింక్ చేస్తున్నాను.",
+    "bt": "Even so, I am linking two studies below for you.",
+    "flag": ""
+  },
+  {
+    "id": 188,
+    "start": 773.36,
+    "end": 779.28,
+    "hi_clean": "जो क्लियरली बताती हैं कि लैक ऑफ़ मूवमेंट और कॉन्स्टिपेशन का कितना बड़ा लिंक है।",
+    "te": "మూవ్‌మెంట్ లేకపోవడానికీ, మలబద్ధకానికీ ఎంత పెద్ద లింక్ ఉందో అవి క్లియర్‌గా చూపిస్తాయి.",
+    "bt": "They clearly show how big a link there is between lack of movement and constipation.",
+    "flag": ""
+  },
+  {
+    "id": 189,
+    "start": 779.28,
+    "end": 784.28,
+    "hi_clean": "इस वीडियो में कोट की गई हर स्टडी का लिंक आपको नीचे डिस्क्रिप्शन में मिल जाएगा।",
+    "te": "ఈ వీడియోలో చెప్పిన ప్రతి స్టడీ లింక్ మీకు కింద డిస్క్రిప్షన్‌లో దొరుకుతుంది.",
+    "bt": "The link of every study mentioned in this video will be there for you in the description below.",
+    "flag": ""
+  },
+  {
+    "id": 190,
+    "start": 784.28,
+    "end": 787.28,
+    "hi_clean": "वैसे तो सभी एक्सरसाइज़ फ़ायदेमंद हैं,",
+    "te": "నిజానికి అన్ని ఎక్సర్‌సైజ్‌లూ మంచివే.",
+    "bt": "Actually all exercises are good.",
+    "flag": ""
+  },
+  {
+    "id": 191,
+    "start": 787.28,
+    "end": 792.28,
+    "hi_clean": "लेकिन आपके गट के लिए कुछ स्पेसिफ़िक मूवमेंट्स हैं जो एक्स्ट्रा बेनिफ़िशियल हैं।",
+    "te": "కానీ మీ గట్ కోసం కొన్ని స్పెసిఫిక్ మూవ్‌మెంట్స్ ఎక్స్‌ట్రా బెనిఫిషియల్.",
+    "bt": "But for your gut, some specific movements are extra beneficial.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 192,
+    "start": 792.28,
+    "end": 799.28,
+    "hi_clean": "जैसे ट्विस्टिंग आसनास — पश्चिमोत्तानासन, मरीच्यासन, अर्ध मत्स्येन्द्रासन, मलासन।",
+    "te": "అంటే ట్విస్టింగ్ ఆసనాలు — పశ్చిమోత్తానాసనం, మరీచ్యాసనం, అర్ధ మత్స్యేంద్రాసనం, మాలాసనం.",
+    "bt": "That is, twisting asanas — Paschimottanasana, Marichyasana, Ardha Matsyendrasana, Malasana.",
+    "flag": "term-choice"
+  },
+  {
+    "id": 193,
+    "start": 799.28,
+    "end": 805.28,
+    "hi_clean": "अगर आप सोच रहे हैं कि ये सब करेंगे कैसे, तो हमारे पास आपके लिए एक स्पेशल गिफ़्ट है।",
+    "te": "ఇవన్నీ ఎలా చేయాలా అని ఆలోచిస్తున్నారా? మీ కోసం మా దగ్గర ఒక స్పెషల్ గిఫ్ట్ ఉంది.",
+    "bt": "Wondering how to do all these? We have a special gift for you.",
+    "flag": ""
+  },
+  {
+    "id": 194,
+    "start": 806.28,
+    "end": 812.28,
+    "hi_clean": "हमने अपने योगा चैनल पर एक तीस मिनट की वीडियो अपलोड की है, जिसमें ये सारे आसनास इंक्लूड किए हैं।",
+    "te": "మా యోగా ఛానల్‌లో ముప్పై నిమిషాల వీడియో అప్‌లోడ్ చేశాం — అందులో ఈ ఆసనాలన్నీ ఇంక్లూడ్ చేశాం.",
+    "bt": "We have uploaded a thirty-minute video on our yoga channel — in it we have included all these asanas.",
+    "flag": ""
+  },
+  {
+    "id": 195,
+    "start": 812.28,
+    "end": 818.28,
+    "hi_clean": "चाहे आप बिगिनर हों या ऑलरेडी योगा प्रैक्टिस करते हों, आप इसे देखकर साथ में प्रैक्टिस कर सकते हैं।",
+    "te": "మీరు బిగినర్ అయినా, ఆల్రెడీ యోగా చేస్తున్నా — దాన్ని చూస్తూ మాతో పాటు ప్రాక్టీస్ చేయొచ్చు.",
+    "bt": "Whether you are a beginner or already doing yoga — you can watch it and practise along with us.",
+    "flag": ""
+  },
+  {
+    "id": 196,
+    "start": 818.28,
+    "end": 820.28,
+    "hi_clean": "इस वीडियो का लिंक आपको नीचे डिस्क्रिप्शन में मिल जाएगा।",
+    "te": "లింక్ డిస్క్రిప్షన్‌లో ఉంటుంది.",
+    "bt": "The link will be in the description.",
+    "flag": "length-risk",
+    "te_orig": "ఆ వీడియో లింక్ కింద డిస్క్రిప్షన్‌లో ఉంటుంది."
+  },
+  {
+    "id": 197,
+    "start": 820.28,
+    "end": 825.28,
+    "hi_clean": "और अगर आपको लगता है कि 'अरे, योगा तो मुझसे होता ही नहीं' — कोई बात नहीं।",
+    "te": "ఒకవేళ 'అయ్యో, యోగా నా వల్ల కాదు' అనిపిస్తే — పర్వాలేదు!",
+    "bt": "In case you feel 'oh no, yoga is not possible for me' — no problem!",
+    "flag": ""
+  },
+  {
+    "id": 198,
+    "start": 825.28,
+    "end": 832.28,
+    "hi_clean": "आप ब्रिस्क वॉकिंग करें, कोई स्पोर्ट खेलें, डांस करें, साइक्लिंग करें — वो मूवमेंट करें जो आपके दिल को ख़ुश करे।",
+    "te": "బ్రిస్క్ వాకింగ్ చేయండి, ఏదైనా స్పోర్ట్ ఆడండి, డ్యాన్స్ చేయండి, సైక్లింగ్ చేయండి — మీ మనసుకి నచ్చిన మూవ్‌మెంట్ ఏదైనా సరే.",
+    "bt": "Do brisk walking, play some sport, dance, do cycling — any movement your heart likes.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 199,
+    "start": 832.28,
+    "end": 836.28,
+    "hi_clean": "'पर मुझे सुबह काम पे जाना होता है, इतना सब करने का टाइम कहाँ?'",
+    "te": "'కానీ నేను పొద్దున్నే పనికి వెళ్లాలి, ఇవన్నీ చేసే టైమ్ ఎక్కడిది?'",
+    "bt": "'But I have to go to work in the morning, where is the time to do all this?'",
+    "flag": ""
+  },
+  {
+    "id": 200,
+    "start": 837.28,
+    "end": 843.28,
+    "hi_clean": "हम्म... अगर डॉक्टर कहे कि आपके हार्ट में ब्लॉकेज है, तो सब सीरियस हो जाते हैं।",
+    "te": "హ్మ్... డాక్టర్ మీ హార్ట్‌లో బ్లాకేజ్ ఉంది అంటే, అందరూ సీరియస్ అయిపోతారు.",
+    "bt": "Hmm... if the doctor says there is a blockage in your heart, everyone becomes serious.",
+    "flag": ""
+  },
+  {
+    "id": 201,
+    "start": 843.28,
+    "end": 846.28,
+    "hi_clean": "अगर दिमाग़ में ब्लॉकेज हो, पूरा परिवार पैनिक हो जाता है।",
+    "te": "బ్రెయిన్ బ్లాకేజ్ అంటే ఫ్యామిలీ పానిక్.",
+    "bt": "Brain blockage means the family panics.",
+    "flag": "",
+    "te_orig": "బ్రెయిన్‌లో బ్లాకేజ్ అంటే, ఫ్యామిలీ మొత్తం పానిక్ అయిపోతుంది."
+  },
+  {
+    "id": 202,
+    "start": 846.28,
+    "end": 850.28,
+    "hi_clean": "विंड पाइप में ब्लॉकेज हो जाए, तो सब कुछ छोड़-छाड़ के हॉस्पिटल भागते हैं।",
+    "te": "విండ్ పైప్‌లో బ్లాకేజ్ వస్తే, అన్నీ వదిలేసి హాస్పిటల్‌కి పరిగెడతారు.",
+    "bt": "If a blockage comes in the wind pipe, they drop everything and run to the hospital.",
+    "flag": ""
+  },
+  {
+    "id": 203,
+    "start": 850.28,
+    "end": 854.28,
+    "hi_clean": "तो फिर गट में ब्लॉकेज को इतना कैज़ुअली क्यों लेते हैं?",
+    "te": "మరి గట్‌లో బ్లాకేజ్‌ని మాత్రం ఇంత క్యాజువల్‌గా ఎందుకు తీసుకుంటాం?",
+    "bt": "Then why do we take a blockage in the gut so casually?",
+    "flag": ""
+  },
+  {
+    "id": 204,
+    "start": 854.28,
+    "end": 858.28,
+    "hi_clean": "जबकि दैट इज़ द मदर ऑफ़ ऑल डिज़ीज़ेज़ — ईवन मेंटल हेल्थ प्रॉब्लम्स।",
+    "te": "నిజానికి అదే అన్ని రోగాలకూ తల్లి — చివరికి మెంటల్ హెల్త్ ప్రాబ్లమ్స్‌కి కూడా.",
+    "bt": "Actually that itself is the mother of all diseases — even of mental health problems.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 205,
+    "start": 858.28,
+    "end": 862.28,
+    "hi_clean": "तो इसलिए आप ये मत सोचिए कि 'मेरे पास तो ये सब करने का टाइम नहीं है'।",
+    "te": "అందుకే 'నాకు ఇవన్నీ చేసే టైమ్ లేదు' అని అనుకోకండి.",
+    "bt": "That is why, do not think 'I do not have time to do all this'.",
+    "flag": ""
+  },
+  {
+    "id": 206,
+    "start": 862.28,
+    "end": 868.28,
+    "hi_clean": "आप लाइफ़ में जिस चीज़ को प्रायोरिटाइज़ करेंगे, उसके लिए टाइम निकल ही आएगा — सच में।",
+    "te": "లైఫ్‌లో మీరు దేనికి ప్రయారిటీ ఇస్తారో, దానికి టైమ్ దొరికి తీరుతుంది — నిజంగా.",
+    "bt": "Whatever you give priority to in life, time for it will definitely be found — truly.",
+    "flag": ""
+  },
+  {
+    "id": 207,
+    "start": 869.28,
+    "end": 875.28,
+    "hi_clean": "बढ़ते हैं अपने कॉन्स्टिपेशन हीलिंग प्लान के लास्ट स्टेप पे। अभी तक आपने ये चार चीज़ें सीखी हैं।",
+    "te": "ఇక మన మలబద్ధకం హీలింగ్ ప్లాన్ లాస్ట్ స్టెప్‌కి వెళ్దాం. ఇప్పటిదాకా మీరు ఈ నాలుగు విషయాలు నేర్చుకున్నారు.",
+    "bt": "Now let us go to the last step of our constipation healing plan. Till now you have learnt these four things.",
+    "flag": ""
+  },
+  {
+    "id": 208,
+    "start": 875.28,
+    "end": 882.28,
+    "hi_clean": "अब मैं सच बताऊँ तो ये चार चीज़ें काफ़ी हैं। अगर आप इम्प्लीमेंट करते हैं, आप एक हफ़्ते के अंदर-अंदर ही चेंजेस देखेंगे।",
+    "te": "నిజం చెప్పాలంటే ఈ నాలుగూ చాలు. వీటిని ఇంప్లిమెంట్ చేస్తే, వారం లోపే మీకు ఛేంజెస్ కనిపిస్తాయి.",
+    "bt": "To tell the truth, these four are enough. If you implement them, you will see changes within a week.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 209,
+    "start": 882.28,
+    "end": 887.28,
+    "hi_clean": "लेकिन ये लास्ट स्टेप उनके लिए है, जो और ज़्यादा फ़ास्ट रिज़ल्ट्स चाहते हैं।",
+    "te": "కానీ ఈ లాస్ట్ స్టెప్ — ఇంకా ఫాస్ట్ రిజల్ట్స్ కావాలనుకునే వాళ్ల కోసం.",
+    "bt": "But this last step is for those who want even faster results.",
+    "flag": ""
+  },
+  {
+    "id": 210,
+    "start": 887.28,
+    "end": 891.28,
+    "hi_clean": "और वो है — ऐब्डॉमिनल वेट पैक, फ़ॉलोड बाय एनिमा।",
+    "te": "అదే — పొట్ట మీద వెట్ ప్యాక్, ఆ తర్వాత ఎనిమా.",
+    "bt": "That is — a wet pack on the belly, and after that an enema.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 211,
+    "start": 891.28,
+    "end": 895.28,
+    "hi_clean": "वेट पैक एक बहुत ही सिंपल टूल है, जो नेचर क्योर का पार्ट है।",
+    "te": "వెట్ ప్యాక్ చాలా సింపుల్ టూల్ — ఇది నేచర్ క్యూర్‌లో భాగం.",
+    "bt": "The wet pack is a very simple tool — it is part of nature cure.",
+    "flag": ""
+  },
+  {
+    "id": 212,
+    "start": 895.28,
+    "end": 901.28,
+    "hi_clean": "एक ठंडे वाइट कॉटन के कपड़े को आपको तीस-चालीस मिनट के लिए अपने ऐब्डोमन पे लपेट के रखना है।",
+    "te": "చల్లటి తెల్ల కాటన్ గుడ్డని ముప్పై నలభై నిమిషాలు మీ పొట్ట చుట్టూ చుట్టి ఉంచాలి.",
+    "bt": "You have to wrap a cold white cotton cloth around your belly and keep it for thirty to forty minutes.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 213,
+    "start": 901.28,
+    "end": 904.28,
+    "hi_clean": "लगा कर आप कोई भी और काम कर सकते हैं।",
+    "te": "అది పెట్టుకుని మీరు ఇంకే పనైనా చేసుకోవచ్చు.",
+    "bt": "With it on, you can do any other work.",
+    "flag": ""
+  },
+  {
+    "id": 214,
+    "start": 904.28,
+    "end": 908.28,
+    "hi_clean": "जब ये वेट पैक लगाते हैं, बॉडी में दो टेम्परेचर मेंटेन होते हैं —",
+    "te": "వెట్ ప్యాక్ పెట్టినప్పుడు, బాడీలో రెండు టెంపరేచర్లు మెయింటెన్ అవుతాయి —",
+    "bt": "When the wet pack is put on, two temperatures get maintained in the body —",
+    "flag": ""
+  },
+  {
+    "id": 215,
+    "start": 908.28,
+    "end": 911.28,
+    "hi_clean": "जहाँ वेट पैक लगा है वो पार्ट ठंडा, बाक़ी शरीर गर्म।",
+    "te": "వెట్ ప్యాక్ ఉన్న భాగం చల్లగా, మిగతా బాడీ వేడిగా.",
+    "bt": "The part where the wet pack is stays cool, the rest of the body warm.",
+    "flag": ""
+  },
+  {
+    "id": 216,
+    "start": 911.28,
+    "end": 913.28,
+    "hi_clean": "इससे ब्लड सर्कुलेशन बढ़ता है।",
+    "te": "దీంతో బ్లడ్ సర్క్యులేషన్ పెరుగుతుంది.",
+    "bt": "With this, blood circulation increases.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 217,
+    "start": 913.28,
+    "end": 919.28,
+    "hi_clean": "और जब ब्लड सर्कुलेट होता है, तो टॉक्सिन्स, वेस्ट — जो इंटेस्टाइन के अंदर जमा हुआ है —",
+    "te": "బ్లడ్ బాగా సర్క్యులేట్ అయినప్పుడు — పేగుల్లో పేరుకుపోయిన టాక్సిన్స్, వేస్ట్,",
+    "bt": "When the blood circulates well — the toxins and waste piled up in the intestines,",
+    "flag": ""
+  },
+  {
+    "id": 218,
+    "start": 919.28,
+    "end": 922.28,
+    "hi_clean": "वो भी धीरे-धीरे अपनी जगह छोड़ने लगता है,",
+    "te": "అవి కూడా మెల్లమెల్లగా తమ చోటు వదలడం స్టార్ట్ చేస్తాయి,",
+    "bt": "They too slowly start leaving their place,",
+    "flag": ""
+  },
+  {
+    "id": 219,
+    "start": 922.28,
+    "end": 924.28,
+    "hi_clean": "और बॉडी से निकलने के लिए तैयार होता है।",
+    "te": "బాడీ నుంచి బయటికి వెళ్లడానికి రెడీ అవుతాయి.",
+    "bt": "And get ready to go out of the body.",
+    "flag": ""
+  },
+  {
+    "id": 220,
+    "start": 925.28,
+    "end": 929.28,
+    "hi_clean": "वेट पैक लगाने के बाद, अगर आप एनिमा लें तो आपको डबल फ़ायदा मिलेगा।",
+    "te": "వెట్ ప్యాక్ తర్వాత ఎనిమా తీసుకుంటే, మీకు డబుల్ బెనిఫిట్.",
+    "bt": "If you take an enema after the wet pack, you get double benefit.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 221,
+    "start": 929.28,
+    "end": 934.28,
+    "hi_clean": "एनिमा के थ्रू आप अपने रेक्टम में थोड़ा पानी डालते हैं, उसको होल्ड करते हैं।",
+    "te": "ఎనిమా ద్వారా మీ రెక్టమ్‌లోకి కొద్దిగా నీళ్లు పంపి, కాసేపు హోల్డ్ చేస్తారు.",
+    "bt": "Through the enema, you send a little water into your rectum and hold it for a while.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 222,
+    "start": 934.28,
+    "end": 939.28,
+    "hi_clean": "और ये पानी अंदर जाके वेस्ट को लूज़ करता है, और बाहर निकालने में मदद करता है।",
+    "te": "ఆ నీళ్లు లోపలికి వెళ్లి వేస్ట్‌ని లూజ్ చేసి, బయటికి పంపడంలో హెల్ప్ చేస్తాయి.",
+    "bt": "That water goes inside, loosens the waste, and helps send it out.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 223,
+    "start": 939.28,
+    "end": 946.28,
+    "hi_clean": "और हाँ, वैसे तो एनिमा आपको केमिस्ट शॉप में मिल जाएगा, लेकिन आपके लिए इसको और कन्वीनियंट बनाने के लिए,",
+    "te": "అవును, ఎనిమా మీకు మెడికల్ షాపులో దొరుకుతుంది — కానీ మీకు ఇంకా కన్వీనియంట్‌గా ఉండేందుకు,",
+    "bt": "Yes, you will get the enema at a medical shop — but to make it even more convenient for you,",
+    "flag": ""
+  },
+  {
+    "id": 224,
+    "start": 946.28,
+    "end": 949.28,
+    "hi_clean": "हमने इसको अपनी वेबसाइट पर भी अवेलेबल किया है।",
+    "te": "మేము దీన్ని మా వెబ్‌సైట్‌లో కూడా అవైలబుల్ చేశాం.",
+    "bt": "We have also made it available on our website.",
+    "flag": ""
+  },
+  {
+    "id": 225,
+    "start": 949.28,
+    "end": 954.28,
+    "hi_clean": "अगर आप एनिमा या वेट पैक ऑर्डर करना चाहते हैं, तो यहाँ क्लिक कर सकते हैं।",
+    "te": "మీరు ఎనిమా లేదా వెట్ ప్యాక్ ఆర్డర్ చేయాలంటే, ఇక్కడ క్లిక్ చేయొచ్చు.",
+    "bt": "If you want to order the enema or wet pack, you can click here.",
+    "flag": ""
+  },
+  {
+    "id": 226,
+    "start": 954.28,
+    "end": 958.28,
+    "hi_clean": "और अगर आप एनिमा की पूरी विधि समझना चाहते हैं, तो यहाँ क्लिक करें।",
+    "te": "ఎనిమా పూర్తి ప్రాసెస్ తెలుసుకోవాలంటే, ఇక్కడ క్లిక్ చేయండి.",
+    "bt": "If you want to know the full process of the enema, click here.",
+    "flag": ""
+  },
+  {
+    "id": 227,
+    "start": 958.28,
+    "end": 961.28,
+    "hi_clean": "और अगर आप वेट पैक के बारे में और सीखना चाहते हैं, तो यहाँ।",
+    "te": "వెట్ ప్యాక్ గురించి ఇంకా తెలుసుకోవాలంటే — ఇక్కడ.",
+    "bt": "If you want to learn more about the wet pack — here.",
+    "flag": ""
+  },
+  {
+    "id": 228,
+    "start": 961.28,
+    "end": 967.28,
+    "hi_clean": "मैं आशा करती हूँ कि आप ये स्टेप्स फ़ॉलो करके अपनी कॉन्स्टिपेशन को पूरी तरह हील करेंगे।",
+    "te": "ఈ స్టెప్స్ ఫాలో అయ్యి, మీరు మీ మలబద్ధకాన్ని పూర్తిగా హీల్ చేసుకుంటారని ఆశిస్తున్నాను.",
+    "bt": "I hope that by following these steps you will heal your constipation completely.",
+    "flag": "health-claim"
+  },
+  {
+    "id": 229,
+    "start": 967.28,
+    "end": 971.28,
+    "hi_clean": "अभी के लिए इतना ही। हम जल्द वापस मिलेंगे।",
+    "te": "ప్రస్తుతానికి ఇంతే. మళ్లీ త్వరలో కలుద్దాం.",
+    "bt": "That is all for now. We will meet again soon.",
+    "flag": ""
+  }
+]

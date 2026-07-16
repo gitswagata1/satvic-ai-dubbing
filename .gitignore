@@ -1,0 +1,24 @@
+# ── Python env / caches ────────────────────────────────────────────
+5_Pipeline_Workspace/.venv/
+**/__pycache__/
+*.pyc
+.DS_Store
+
+# ── Large media (exceed GitHub's 100 MB limit; regenerate via the pipeline) ──
+# Source material (copyright: Satvic Movement) — not redistributed
+5_Pipeline_Workspace/inputs/
+# Demucs voice/music stems (~327 MB, derived from source)
+5_Pipeline_Workspace/data/stems/
+# 460 per-segment voice-cloned clips (~98 MB, regenerable: scripts/synth_full.py)
+5_Pipeline_Workspace/segment_audio/
+# assembled intermediates
+5_Pipeline_Workspace/output/*.wav
+5_Pipeline_Workspace/output/*.mp4
+# voice-clone reference clips (derived from source audio)
+5_Pipeline_Workspace/references/*.wav
+
+# ── Final deliverables (339 MB each — distributed via Release / Drive, see 1_Final_Videos/README.md) ──
+1_Final_Videos/*.mp4
+1_Final_Videos/YouTube_Audio_Tracks/*.wav
+
+# Committed on purpose (small proof assets): 4_Audio_Samples/*.wav
