@@ -3,14 +3,14 @@ import numpy as np, soundfile as sf
 
 LANG = sys.argv[1]
 SR = 24000
-MAX_TEMPO = 1.30          # max speed-up to fit a slot
+MAX_TEMPO = 1.40          # max speed-up to fit a slot
 SEGS = json.load(open(f"data/segments_{LANG}.json"))
 DUR = 972.126621          # exact source duration
 
 canvas = np.zeros(int(DUR * SR) + 5 * SR, dtype=np.float32)
 write_head = 0.0      # earliest time the next segment may start (no overlaps, ever)
 max_drift = 0.0
-GAP = 0.12            # minimal breath gap between cascaded segments
+GAP = 0.08            # minimal breath gap between cascaded segments
 
 for i, s in enumerate(SEGS):
     path = f"segment_audio/synth_{LANG}/seg_{s['id']:03d}.wav"

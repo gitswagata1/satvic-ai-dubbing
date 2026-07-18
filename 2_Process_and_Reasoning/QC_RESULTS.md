@@ -9,7 +9,7 @@ machine checks confirmed and what to look at first.
 | Check | Target | Telugu | Malayalam |
 |---|---|---|---|
 | Video duration matches source | 972.13s | ✅ 972.0s | ✅ 972.0s |
-| Audio/scene drift (max) | < ~1.5s | ✅ ~1.1s | ✅ 1.1s |
+| Audio/scene drift (max) | < ~1.5s | ✅ 0.55s | ✅ 0.57s |
 | Integrated loudness | ~ −14 LUFS | ✅ −14.3 | ✅ −14.2 |
 | True peak | ≤ −1 dBTP | ✅ −1.5 | ✅ −1.5 |
 | Video codec / resolution | H.264 1080p | ✅ | ✅ |
