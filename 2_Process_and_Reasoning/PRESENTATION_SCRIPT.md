@@ -1,12 +1,8 @@
 # Screen-Recording Presentation Script (~6–8 minutes)
 
-*Record your screen with this folder open. Talk through it in this order — the narrative
-arc is: platform gap → tool hunt with two pivots → ₹0 pipeline → trust-first verification →
-what scale looks like. Speak naturally; these are beats, not lines to read.*
-
 ---
 
-**[0:00 — The gap]** *(show the YouTube auto-dub language list or PROCESS.md §1)*
+**[0:00 — The gap]**
 "Before picking any AI tool, I asked why this problem even exists — YouTube dubs videos for
 free now. The answer: from a Hindi video, YouTube cannot auto-dub into Telugu, Malayalam or
 Kannada. At all. And where it can dub, it uses a generic robot voice — not Subah's. For a
