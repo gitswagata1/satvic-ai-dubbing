@@ -1,4 +1,16 @@
+<div align="center">
+
 # Dubbing Satvic Movement into Regional India 🇮🇳
+
+**AI dubbing pipeline: Hindi → Telugu & Malayalam in the creator's cloned voice**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Whisper](https://img.shields.io/badge/OpenAI_Whisper-412991?style=flat-square&logo=openai&logoColor=white)
+![ffmpeg](https://img.shields.io/badge/ffmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Cost](https://img.shields.io/badge/Total_Cost-₹0-brightgreen?style=flat-square)
+
+</div>
 
 **Creative Retreat · Founder's Office — AI Specialist submission**
 
