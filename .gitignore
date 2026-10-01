@@ -1,7 +1,9 @@
 # ── Python env / caches ────────────────────────────────────────────
 5_Pipeline_Workspace/.venv/
 **/__pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.env
 .DS_Store
 
 # ── Large media (exceed GitHub's 100 MB limit; regenerate via the pipeline) ──
