@@ -66,6 +66,13 @@ YouTube (Hindi 16:12)
 Every tool is free/open-source. Total spend: **₹0**. The ₹2,500 budget became a priced
 escalation ladder (ElevenLabs) that quality never forced us onto.
 
+## Prerequisites
+
+- Python 3.10+
+- ffmpeg (`brew install ffmpeg` / `apt install ffmpeg` / [ffmpeg.org](https://ffmpeg.org/download.html))
+- yt-dlp (`pip install yt-dlp`)
+- ~8 GB disk space for models and intermediate audio
+
 ## Reproduce it
 
 ```bash
