@@ -94,8 +94,10 @@ satvic-ai-dubbing/
 ├── 1_Final_Videos/              # Output dubbed videos
 ├── 2_Process_and_Reasoning/     # Documentation of the dubbing process
 ├── 3_Accuracy_Review_Kit/       # QC sheets and reviewer instructions
-├── 4_Audio_Samples/             # Sample audio clips for testing
+├── 4_Audio_Samples/             # 20 s Telugu / Malayalam outputs from the authorised run
 ├── 5_Pipeline_Workspace/        # Main pipeline code
+│   ├── app.py                   # Streamlit UI: upload → stages + timing → play output
+│   ├── pipeline.py              # Clip-level pipeline, per-stage timing table + timings.json
 │   ├── scripts/                 # Core pipeline scripts
 │   │   ├── synth_full.py        # Full synthesis pipeline
 │   │   ├── assemble.py          # Audio assembly
@@ -104,12 +106,22 @@ satvic-ai-dubbing/
 │   │   └── ...
 │   ├── requirements.txt         # Python dependencies
 │   └── data/                    # Input data
+├── demo/                        # How to make an own-voice before/after clip
+├── docs/screenshots/            # UI screenshots
 ├── Pitch_Deck.pdf               # Project pitch deck
 ├── SUBMISSION.md                # Detailed submission document
-├── Dockerfile                   # Container image
+├── Dockerfile                   # Placeholder (does not run the pipeline yet)
 ├── Makefile                     # Dev commands
 └── LICENSE                      # MIT
 ```
+
+---
+
+## Screenshots
+
+| Pipeline stages + timing | Before/after + segment table |
+|---|---|
+| ![](docs/screenshots/01-pipeline-stages-and-timing.png) | ![](docs/screenshots/02-before-after-and-segments.png) |
 
 ---
 
