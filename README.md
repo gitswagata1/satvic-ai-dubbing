@@ -15,6 +15,18 @@
 
 </div>
 
+
+> **Problem:** Indian creators' long-form content stays locked in one language, and commercial dubbing is expensive and rarely supports Telugu or Malayalam in the speaker's own voice.
+> **Solution:** a local chain of open models (Demucs → Whisper → human-reviewed translation → IndicF5 voice clone → ffmpeg) that dubs Hindi into Telugu and Malayalam at ₹0 API cost.
+>
+> **Key features:** ① 5-model pipeline with per-stage status and timing (`pipeline.py`, `timings.json`) · ② Streamlit UI: upload a clip → choose language → watch each stage → play output · ③ Automated QC: a language-ID scan-and-regenerate loop brought reference-echo leaks to **0 of 460 segments**
+>
+> **Tech stack:** Python · PyTorch · Demucs · OpenAI Whisper · IndicF5 (AI4Bharat) · ffmpeg · Streamlit
+>
+> **Status: prototype.** It has been used once end to end, on a 16-minute video for Satvic Movement's assignment.
+>
+> **How this maps to battery-lifespan prediction:** it is a chain of ML models with measured stages, QC gates and a human in the loop, the same engineering a simulation → ML-surrogate → dashboard pipeline needs (for example MD runs → feature extraction → degradation model → RUL dashboard).
+
 ---
 
 ## What is this?
@@ -29,7 +41,7 @@ An end-to-end AI dubbing pipeline that takes Hindi video/audio and produces dubb
 | **Voice synthesis** | [IndicF5 TTS](https://github.com/ai4bharat/IndicF5) | Clones the speaker's voice in the target language |
 | **Assembly** | [ffmpeg](https://ffmpeg.org/) | Merges dubbed audio back with original background |
 
-**Total API cost: Rs. 0** — everything runs locally on your GPU.
+**Total API cost: Rs. 0** — everything runs locally. The original run used a MacBook CPU; synthesis took about 2 h per video-language (see `2_Process_and_Reasoning/PROCESS.md`). A GPU cuts this to minutes.
 
 ---
 
@@ -82,8 +94,10 @@ satvic-ai-dubbing/
 ├── 1_Final_Videos/              # Output dubbed videos
 ├── 2_Process_and_Reasoning/     # Documentation of the dubbing process
 ├── 3_Accuracy_Review_Kit/       # QC sheets and reviewer instructions
-├── 4_Audio_Samples/             # Sample audio clips for testing
+├── 4_Audio_Samples/             # 20 s Telugu / Malayalam outputs from the authorised run
 ├── 5_Pipeline_Workspace/        # Main pipeline code
+│   ├── app.py                   # Streamlit UI: upload → stages + timing → play output
+│   ├── pipeline.py              # Clip-level pipeline, per-stage timing table + timings.json
 │   ├── scripts/                 # Core pipeline scripts
 │   │   ├── synth_full.py        # Full synthesis pipeline
 │   │   ├── assemble.py          # Audio assembly
@@ -92,56 +106,81 @@ satvic-ai-dubbing/
 │   │   └── ...
 │   ├── requirements.txt         # Python dependencies
 │   └── data/                    # Input data
+├── demo/                        # How to make an own-voice before/after clip
+├── docs/screenshots/            # UI screenshots
 ├── Pitch_Deck.pdf               # Project pitch deck
 ├── SUBMISSION.md                # Detailed submission document
-├── Dockerfile                   # Container image
+├── Dockerfile                   # Placeholder (does not run the pipeline yet)
 ├── Makefile                     # Dev commands
 └── LICENSE                      # MIT
 ```
 
 ---
 
+## Screenshots
+
+| Pipeline stages + timing | Before/after + segment table |
+|---|---|
+| ![](docs/screenshots/01-pipeline-stages-and-timing.png) | ![](docs/screenshots/02-before-after-and-segments.png) |
+
+---
+
 ## Quickstart
 
-### Prerequisites
+### Hardware used
 
-- Python 3.10+
-- CUDA-capable GPU (recommended: 8GB+ VRAM)
-- ffmpeg installed and on PATH
+| | |
+|---|---|
+| Original 16-min run | MacBook, CPU only (no GPU). IndicF5 synthesis ≈ 2 h per language |
+| Recommended | Any CUDA GPU with 8 GB+ VRAM for fast synthesis; CPU works but is slow |
 
-### Installation
+### Models and licences
+
+| Stage | Model / tool | Licence |
+|---|---|---|
+| Separation | Demucs (Meta) | MIT |
+| Transcription | Whisper (OpenAI) | MIT |
+| Voice clone | IndicF5 (AI4Bharat), gated on Hugging Face | See model card; requires explicit permission from the voice owner |
+| Assembly | ffmpeg | LGPL/GPL |
+
+### Install
 
 ```bash
-# Clone the repository
 git clone https://github.com/gitswagata1/satvic-ai-dubbing.git
-cd satvic-ai-dubbing
-
-# Create a virtual environment
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r 5_Pipeline_Workspace/requirements.txt
+cd satvic-ai-dubbing/5_Pipeline_Workspace
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt streamlit     # needs ffmpeg on PATH and a Hugging Face token for ai4bharat/IndicF5
 ```
 
-### Run the pipeline
+### Run on a short clip (UI)
 
 ```bash
-cd 5_Pipeline_Workspace
-
-# Full synthesis — dub a Hindi audio file to Telugu
-python scripts/synth_full.py --input data/input.wav --lang telugu
-
-# Assemble final output with background audio
-python scripts/assemble.py --dubbed output/dubbed.wav --bg output/background.wav
+streamlit run app.py        # upload a clip, pick Telugu/Malayalam, see each stage + timing, play the output
 ```
 
-### Docker
+### Run on a short clip (CLI, prints a per-stage timing table)
 
 ```bash
-docker build -t satvic-dubbing .
-docker run --gpus all -v $(pwd)/data:/app/data satvic-dubbing
+python pipeline.py ../demo/input_hi.wav --lang te --translation ../demo/translation_te.txt --out ../demo/output_te
 ```
+
+```
+stage       tool                     status   time (s)  note
+normalize   ffmpeg                   ok           ...   ...
+separate    Demucs htdemucs          ok           ...
+transcribe  Whisper                  ok           ...
+translate   human-in-the-loop text   ok           ...
+synthesize  IndicF5 (AI4Bharat)      ok           ...
+assemble    ffmpeg                   ok           ...
+```
+
+If a model isn't installed, its stage is reported as `skipped` with the reason. Results are never faked.
+
+### Full-length scripts (as used for the Satvic run)
+
+`5_Pipeline_Workspace/README.md` lists the exact order: `synth_full.py <te|ml>` → `fix_leaks.py <lang> scan` → `final_scan.py <lang>` → `assemble.py <lang>`. All scripts take the language as a positional argument and run from `5_Pipeline_Workspace/`.
+
+> The `Dockerfile` is a placeholder and does not run the pipeline yet.
 
 ---
 
