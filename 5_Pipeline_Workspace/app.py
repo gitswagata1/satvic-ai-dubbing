@@ -60,7 +60,7 @@ with prev_tab:
     st.markdown(
         "Outputs from the full 16-minute run made for Satvic Movement's assignment "
         "(see `SUBMISSION.md`): **230 segments per language**, **0 reference-leaks across 460 segments** "
-        "(language-ID scan), CPU synthesis ≈ **2 h per video-language on a MacBook** (`PROCESS.md`).")
+        "(content-based scan, QC_RESULTS.md), CPU synthesis ≈ **2 h per video-language on a MacBook** (`PROCESS.md`).")
     c1, c2 = st.columns(2)
     for col, (name, f) in zip((c1, c2), [("Telugu", "FINAL_telugu_first20s.wav"), ("Malayalam", "FINAL_malayalam_first20s.wav")]):
         col.subheader(f"After · {name} (first 20 s, music bed kept)")

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Satvic AI Dubbing · Demo</title>
+<meta name="description" content="Hindi to Telugu and Malayalam AI dubbing in the creator's cloned voice, with open models at ₹0 API cost.">
+<style>
+:root{--bg:#f7f6f3;--panel:#fff;--ink:#1d1d1f;--muted:#5f6368;--line:#e4e2dc;--accent:#c2410c;--ok:#15803d;--chip:#fff4e5}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--panel:#1c1c1e;--ink:#f2f2f2;--muted:#a1a1a6;--line:#2c2c2e;--accent:#fb923c;--ok:#4ade80;--chip:#3a2a17}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Telugu","Noto Sans Malayalam","Noto Sans Devanagari",sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 16px 60px}
+.banner{background:var(--chip);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:14px}
+h1{font-size:clamp(28px,4vw,42px);margin:22px 0 6px;letter-spacing:-.02em}h2{font-size:22px;margin:36px 0 12px}
+.lead{color:var(--muted);max-width:760px}
+.grid{display:grid;gap:14px}.g4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+.stat b{display:block;font-size:30px;letter-spacing:-.02em}.stat span{color:var(--muted);font-size:13px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}.step{flex:1 1 150px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.step b{display:block}.step small{color:var(--muted)}.arrow{align-self:center;color:var(--muted)}
+audio{width:100%;margin-top:8px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600;position:sticky;top:0;background:var(--panel)}
+.scroll{overflow:auto;max-height:560px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+td.t{white-space:nowrap;color:var(--muted)}.flag{background:var(--chip);border-radius:6px;padding:1px 6px;font-size:12px;white-space:nowrap}
+.ok{color:var(--ok);font-weight:600}a{color:var(--accent)}
+@media (max-width:640px){.arrow{display:none}.step{flex-basis:100%}}
+</style>
+</head>
+<body><div class="wrap">
+<div class="banner"><b>Project demo.</b> These are real outputs from the full run made for Satvic Movement's assignment, used with their invitation. The original Hindi video belongs to Satvic Movement and isn't redistributed here. Code: <a href="https://github.com/gitswagata1/satvic-ai-dubbing">github.com/gitswagata1/satvic-ai-dubbing</a></div>
+
+<h1>Satvic AI Dubbing</h1>
+<p class="lead">This dubs a 16-minute Hindi health video into <b>Telugu</b> and <b>Malayalam</b> in the creator's own cloned voice. It chains five open models locally on a MacBook, at <b>₹0 API cost</b>.</p>
+
+<div class="grid g4" style="margin-top:18px">
+  <div class="card stat"><b>2</b><span>target languages · 972 s each</span></div>
+  <div class="card stat"><b>460</b><span>voice-cloned segments (230 per language)</span></div>
+  <div class="card stat"><b class="ok">0 / 460</b><span>reference-voice leaks after the content-based scan</span></div>
+  <div class="card stat"><b>≈ 2 h</b><span>CPU synthesis per language (MacBook, no GPU)</span></div>
+</div>
+
+<h2>Listen: dubbed output (first 20 seconds, music bed kept)</h2>
+<div class="grid g2">
+  <div class="card"><b>Telugu</b><audio controls preload="none" src="audio/telugu_20s.mp3"></audio></div>
+  <div class="card"><b>Malayalam</b><audio controls preload="none" src="audio/malayalam_20s.mp3"></audio></div>
+</div>
+
+<h2>Pipeline</h2>
+<div class="flow">
+  <div class="step"><b>1 · Demucs</b><small>Split the voice from the music bed</small></div><div class="arrow">→</div>
+  <div class="step"><b>2 · Whisper</b><small>Hindi transcript, repaired segment by segment</small></div><div class="arrow">→</div>
+  <div class="step"><b>3 · Translation</b><small>LLM with a glossary, numbers spelled out, back-translated for review</small></div><div class="arrow">→</div>
+  <div class="step"><b>4 · IndicF5</b><small>AI4Bharat voice clone, one clip per segment</small></div><div class="arrow">→</div>
+  <div class="step"><b>5 · ffmpeg</b><small>Time-fit each clip to its slot, remix the music, −14 LUFS</small></div>
+</div>
+<p class="lead" style="margin-top:10px">The hardest bug: the voice model sometimes echoed its own reference sentence into a segment. The fix was re-cutting the reference as a clean, complete sentence, plus a scan-and-regenerate loop that checks every segment. The <code>pipeline.py</code> runner in the repo times every stage and writes <code>timings.json</code>.</p>
+
+<h2>Technical QC (from <a href="https://github.com/gitswagata1/satvic-ai-dubbing/blob/main/2_Process_and_Reasoning/QC_RESULTS.md">QC_RESULTS.md</a>)</h2>
+<div class="card" style="padding:0"><table>
+<tr><th>Check</th><th>Target</th><th>Telugu</th><th>Malayalam</th></tr>
+<tr><td>Duration matches source</td><td>972.13 s</td><td class=ok>972.0 s</td><td class=ok>972.0 s</td></tr>
+<tr><td>Audio/scene drift (max)</td><td>&lt; ~1.5 s</td><td class=ok>0.55 s</td><td class=ok>0.57 s</td></tr>
+<tr><td>Integrated loudness</td><td>~ −14 LUFS</td><td class=ok>−14.3</td><td class=ok>−14.2</td></tr>
+<tr><td>True peak</td><td>≤ −1 dBTP</td><td class=ok>−1.5</td><td class=ok>−1.5</td></tr>
+<tr><td>Numbers as words (no digits)</td><td>0 digits</td><td class=ok>0/230</td><td class=ok>0/230</td></tr>
+<tr><td>Reference-voice leak</td><td>0 leaks</td><td class=ok>0/230</td><td class=ok>0/230</td></tr>
+</table></div>
+<p class="lead" style="font-size:14px;margin-top:8px">These are machine checks. Accuracy sign-off is a native-speaker review; the review kit is in the repo.</p>
+
+<h2>Segments: Hindi → Telugu / Malayalam → back-translation</h2>
+<p class="lead">The first 40 of 230 segments. Lines with medical or health claims are flagged for review.</p>
+<div class="scroll"><table>
+<thead><tr><th>t (s)</th><th>Hindi (source)</th><th>Telugu</th><th>Malayalam</th><th>Back-translation</th><th>Flag</th></tr></thead>
+<tbody>
+<tr><td class=t>0.0–4.0</td><td lang=hi>क्या हर रोज़ पेट साफ़ करना आपके लिए मुश्किल होता जा रहा है?</td><td lang=te>రోజూ కడుపు శుభ్రంగా అవ్వడం మీకు కష్టంగా మారిపోతోందా?</td><td lang=ml>ദിവസവും വയറ് ക്ലീൻ ആവാൻ ബുദ്ധിമുട്ട് കൂടി വരുന്നുണ്ടോ?</td><td>Is getting your stomach cleared every day becoming difficult for you?</td><td></td></tr>
+<tr><td class=t>4.0–8.0</td><td lang=hi>और इस कॉन्स्टिपेशन की वजह से आप बॉडी में लो एनर्जी,</td><td lang=te>ఈ మలబద్ధకం వల్ల మీకు బాడీలో లో ఎనర్జీ,</td><td lang=ml>ഈ മലബന്ധം കാരണം ബോഡിയിൽ ലോ എനർജി,</td><td>Because of this constipation, low energy in your body,</td><td></td></tr>
+<tr><td class=t>8.0–12.0</td><td lang=hi>हैवीनेस, ब्लोटिंग या सिरदर्द जैसे सिम्प्टम्स भी एक्सपीरियंस करने लगे हैं?</td><td lang=te>హెవీనెస్, బ్లోటింగ్, తలనొప్పి లాంటి సింప్టమ్స్ కూడా మొదలయ్యాయా?</td><td lang=ml>ഹെവിനെസ്സ്, ബ്ലോട്ടിംഗ്, തലവേദന — ഇങ്ങനത്തെ സിംപ്റ്റംസ് ഒക്കെ വരാൻ തുടങ്ങിയോ?</td><td>Have symptoms like heaviness, bloating, headache also started?</td><td></td></tr>
+<tr><td class=t>13.0–19.0</td><td lang=hi>लैक्सेटिव्स, चूरन, त्रिफला, गरम पानी — सब ट्राय करने के बाद भी कोई परमानेंट सलूशन नहीं मिल रहा?</td><td lang=te>లాక్సేటివ్స్, చూర్ణం, త్రిఫల, వేడి నీళ్లు — అన్నీ ట్రై చేసినా పర్మనెంట్ సొల్యూషన్ దొరకడం లేదా?</td><td lang=ml>ലാക്സേറ്റീവ്സ്, ചൂർണം, ത്രിഫല, ചൂടുവെള്ളം — ട്രൈ ചെയ്തിട്ടും പെർമനെന്റ് സൊല്യൂഷൻ കിട്ടുന്നില്ലേ?</td><td>Laxatives, churna, Triphala, hot water — even after trying everything, you are not finding a permanent solution?</td><td></td></tr>
+<tr><td class=t>19.0–22.0</td><td lang=hi>अगर हाँ, तो आप एकदम सही जगह आए हैं।</td><td lang=te>అవునంటే, మీరు కరెక్ట్ ప్లేస్‌కే వచ్చారు.</td><td lang=ml>അങ്ങനെയാണെങ്കിൽ, നിങ്ങൾ വന്നത് കറക്റ്റ് സ്ഥലത്താണ്.</td><td>If yes, you have come to exactly the correct place.</td><td></td></tr>
+<tr><td class=t>22.0–26.0</td><td lang=hi>इस वीडियो में आप जानेंगे पाँच शक्तिशाली तरीक़ों के बारे में,</td><td lang=te>ఈ వీడియోలో మీరు ఐదు పవర్‌ఫుల్ పద్ధతుల గురించి తెలుసుకుంటారు,</td><td lang=ml>ഈ വീഡിയോയിൽ നിങ്ങൾ അറിയാൻ പോവുന്നത് അഞ്ച് പവർഫുൾ വഴികളാണ്,</td><td>In this video you will learn about five powerful methods,</td><td></td></tr>
+<tr><td class=t>26.0–30.0</td><td lang=hi>जो आपको कॉन्स्टिपेशन को जड़ से ख़त्म करने में मदद करेंगे,</td><td lang=te>అవి మలబద్ధకాన్ని రూట్ నుంచే పోగొట్టడంలో మీకు హెల్ప్ చేస్తాయి —</td><td lang=ml>മലബന്ധം വേരോടെ മാറ്റാൻ നിങ്ങളെ ഹെൽപ്പ് ചെയ്യുന്ന വഴികൾ —</td><td>They will help you get rid of constipation right from the root —</td><td><span class=flag>health-claim</span></td></tr>
+<tr><td class=t>30.0–32.0</td><td lang=hi>सिर्फ़ इक्कीस दिनों में।</td><td lang=te>జస్ట్ ఇరవై ఒక్క రోజుల్లో.</td><td lang=ml>വെറും ഇരുപത്തിയൊന്ന് ദിവസം കൊണ്ട്.</td><td>In just twenty-one days.</td><td><span class=flag>health-claim</span></td></tr>
+<tr><td class=t>32.0–35.0</td><td lang=hi>आगे आप जानेंगे एक ऐसे हर्ब के बारे में,</td><td lang=te>తర్వాత, ఒక స్పెషల్ హెర్బ్ గురించి తెలుసుకుంటారు —</td><td lang=ml>പിന്നെ ഒരു സ്പെഷ്യൽ ഹെർബിനെ പറ്റിയും അറിയാം,</td><td>Later, you will learn about a special herb —</td><td></td></tr>
+<tr><td class=t>35.0–38.0</td><td lang=hi>जो आपके बावेल मूवमेंट्स को नैचुरली रेगुलेट करता है,</td><td lang=te>అది మీ మోషన్‌ని నేచురల్‌గా రెగ్యులేట్ చేస్తుంది,</td><td lang=ml>നിങ്ങളുടെ മോഷൻ നാച്ചുറലായി ശരിയാക്കുന്ന ഒന്ന്,</td><td>It naturally regulates your motion,</td><td><span class=flag>health-claim</span></td></tr>
+<tr><td class=t>38.0–40.0</td><td lang=hi>और आपकी किचन में अभी मौजूद है।</td><td lang=te>అది ఇప్పుడు మీ కిచెన్‌లోనే ఉంది.</td><td lang=ml>ഇപ്പോൾ നിങ്ങളുടെ കിച്ചണിലുണ്ട്.</td><td>And it is right there in your kitchen now.</td><td></td></tr>
+<tr><td class=t>40.0–42.0</td><td lang=hi>और उस एक ऐसी चीज़ के बारे में,</td><td lang=te>ఇంకా అలాంటి ఒక విషయం గురించి —</td><td lang=ml>പിന്നെ വേറൊരു കാര്യത്തെ പറ്റിയും —</td><td>And also about one such thing —</td><td></td></tr>
+<tr><td class=t>42.0–45.0</td><td lang=hi>जो कॉन्स्टिपेशन में अक्सर डॉक्टर्स रिकमेंड करते हैं,</td><td lang=te>మలబద్ధకానికి డాక్టర్లు తరచూ రికమెండ్ చేసేది,</td><td lang=ml>മലബന്ധത്തിന് ഡോക്ടർമാർ സ്ഥിരം പറയുന്ന സാധനം,</td><td>The one doctors often recommend for constipation,</td><td></td></tr>
+<tr><td class=t>45.0–49.0</td><td lang=hi>लेकिन वो आपकी कंडीशन को एक्चुअली और ज़्यादा बिगाड़ देता है।</td><td lang=te>కానీ అది యాక్చువల్‌గా మీ కండిషన్‌ని ఇంకా పాడు చేస్తుంది.</td><td lang=ml>പക്ഷേ അത് നിങ്ങളുടെ കണ്ടീഷൻ ശരിക്കും കൂടുതൽ മോശമാക്കുകയാണ് ചെയ്യുന്നത്.</td><td>But it actually spoils your condition even more.</td><td><span class=flag>health-claim</span></td></tr>
+<tr><td class=t>52.0–55.0</td><td lang=hi>आइए शुरू करते हैं अपने पहले टूल से।</td><td lang=te>రండి, మన మొదటి టూల్‌తో స్టార్ట్ చేద్దాం.</td><td lang=ml>എന്നാൽ നമുക്ക് ആദ്യത്തെ ടൂളിലേക്ക് കടക്കാം.</td><td>Come, let us start with our first tool.</td><td></td></tr>
+<tr><td class=t>56.0–59.0</td><td lang=hi>आजकल हम वेस्टर्न टॉयलेट्स यूज़ करने लगे हैं,</td><td lang=te>ఈ రోజుల్లో మనం వెస్ట్రన్ టాయిలెట్స్ వాడేస్తున్నాం.</td><td lang=ml>ഇപ്പോൾ എല്ലാം വെസ്റ്റേൺ ടോയ്‌ലറ്റല്ലേ?</td><td>These days we have taken to using western toilets.</td><td></td></tr>
+<tr><td class=t>59.0–63.0</td><td lang=hi>जिनमें आपकी बॉडी और नीज़ का ऐसे नब्बे डिग्री का ऐंगल बनता है।</td><td lang=te>వాటిలో మీ బాడీకి, మోకాళ్లకి మధ్య ఇలా తొంభై డిగ్రీల యాంగిల్ వస్తుంది.</td><td lang=ml>അതിൽ ബോഡിയും മുട്ടും തമ്മിൽ തൊണ്ണൂറ് ഡിഗ്രി ആംഗിൾ വരും.</td><td>In them, an angle of ninety degrees comes like this between your body and knees.</td><td></td></tr>
+<tr><td class=t>63.0–70.0</td><td lang=hi>अब प्रॉब्लम ये है कि इस पोज़िशन में आपकी इंटेस्टाइन का आख़िरी हिस्सा — आपका रेक्टम — बेंट रहता है,</td><td lang=te>ప్రాబ్లమ్ ఏంటంటే — ఈ పొజిషన్‌లో మీ పేగు చివరి భాగం, అంటే రెక్టమ్, వంగి ఉంటుంది.</td><td lang=ml>പ്രോബ്ലം എന്താണെന്ന് വെച്ചാൽ, ഈ പൊസിഷനിൽ കുടലിന്റെ അവസാനത്തെ ഭാഗം — നിങ്ങളുടെ റെക്ടം — വളഞ്ഞിട്ടാണ് ഇരിക്കുന്നത്.</td><td>The problem is — in this position the last part of your intestine, that is the rectum, stays bent.</td><td></td></tr>
+<tr><td class=t>70.0–76.0</td><td lang=hi>जिसकी वजह से वेस्ट स्मूदली पास नहीं हो पाता और आपको बहुत ज़ोर लगाना पड़ता है।</td><td lang=te>దాని వల్ల వేస్ట్ స్మూత్‌గా బయటికి వెళ్లదు, మీరు చాలా ఫోర్స్ పెట్టాల్సి వస్తుంది.</td><td lang=ml>അതുകൊണ്ട് വേസ്റ്റ് സ്മൂത്തായി പാസ് ആവില്ല; നിങ്ങൾക്ക് നല്ലോണം ബലം കൊടുക്കേണ്ടി വരും.</td><td>Because of that the waste does not go out smoothly, and you have to apply a lot of force.</td><td></td></tr>
+<tr><td class=t>76.0–80.0</td><td lang=hi>इसीलिए ट्रेडिशनली हमारे देश में इंडियन टॉयलेट्स होते थे,</td><td lang=te>అందుకే మన దేశంలో పూర్వం నుంచీ ఇండియన్ టాయిలెట్స్ ఉండేవి.</td><td lang=ml>അതുകൊണ്ടാണ് പണ്ടൊക്കെ നമ്മുടെ നാട്ടിൽ ഇന്ത്യൻ ടോയ്‌ലറ്റ് ആയിരുന്നത്.</td><td>That is why, from earlier times, there used to be Indian toilets in our country.</td><td></td></tr>
+<tr><td class=t>80.0–83.0</td><td lang=hi>जिनमें हमें स्क्वाट करके बैठना पड़ता था।</td><td lang=te>వాటిలో మనం స్క్వాట్ చేసి కూర్చోవాల్సి వచ్చేది.</td><td lang=ml>അതിൽ നമ്മൾ കുന്തിച്ചിരിക്കണമായിരുന്നു.</td><td>In them we had to sit in a squat.</td><td></td></tr>
+<tr><td class=t>84.0–88.0</td><td lang=hi>इस पोज़िशन में बेसिकली वो बेंट पाइप सीधा हो जाता था,</td><td lang=te>ఈ పొజిషన్‌లో బేసిక్‌గా ఆ వంగిన పైప్ స్ట్రెయిట్ అయిపోయేది.</td><td lang=ml>ഈ പൊസിഷനിൽ ബേസിക്കലി ആ വളഞ്ഞ പൈപ്പ് നേരെയാവും.</td><td>In this position, basically, that bent pipe would become straight.</td><td></td></tr>
+<tr><td class=t>88.0–92.0</td><td lang=hi>और बॉडी स्टूल को ईज़िली रिलीज़ कर पाती थी, बिना कोई प्रेशर डाले।</td><td lang=te>బాడీ ఎలాంటి ప్రెషర్ లేకుండా మోషన్‌ని ఈజీగా రిలీజ్ చేసేసేది.</td><td lang=ml>അപ്പോൾ പ്രഷറൊന്നും കൊടുക്കാതെ തന്നെ മോഷൻ ഈസിയായി പുറത്തുപോവും.</td><td>The body would release the motion easily, without any pressure.</td><td></td></tr>
+<tr><td class=t>92.0–98.0</td><td lang=hi>अरे चिंता मत कीजिए, मैं आपको इंडियन टॉयलेट अपने घर पे इंस्टॉल करने के लिए नहीं बोलूँगी।</td><td lang=te>అయ్యో, టెన్షన్ పడకండి — ఇంట్లో ఇండియన్ టాయిలెట్ పెట్టించుకోమని నేను చెప్పను!</td><td lang=ml>ഹേയ്, ടെൻഷനാവണ്ട — വീട്ടിൽ ഇന്ത്യൻ ടോയ്‌ലറ്റ് ഇടാനൊന്നും ഞാൻ പറയില്ല, കേട്ടോ.</td><td>Oh, do not take tension — I will not tell you to get an Indian toilet installed at home!</td><td></td></tr>
+<tr><td class=t>98.0–102.0</td><td lang=hi>आप अपने वेस्टर्न टॉयलेट में भी इस स्क्वाट पोज़िशन का बेनिफ़िट ले सकते हैं।</td><td lang=te>మీ వెస్ట్రన్ టాయిలెట్‌లోనే ఈ స్క్వాట్ పొజిషన్ బెనిఫిట్ తీసుకోవచ్చు.</td><td lang=ml>നിങ്ങളുടെ വെസ്റ്റേൺ ടോയ്‌ലറ്റിലും ഈ സ്ക്വാട്ട് പൊസിഷന്റെ ബെനിഫിറ്റ് കിട്ടും.</td><td>You can take the benefit of this squat position in your western toilet itself.</td><td></td></tr>
+<tr><td class=t>102.0–105.0</td><td lang=hi>कैसे? एक फ़ुट स्टूल के ज़रिए।</td><td lang=te>ఎలా? ఒక ఫుట్ స్టూల్ ద్వారా.</td><td lang=ml>എങ്ങനെ? ഒരു ഫുട്ട് സ്റ്റൂൾ വെച്ചിട്ട്.</td><td>How? Through a foot stool.</td><td></td></tr>
+<tr><td class=t>105.0–109.0</td><td lang=hi>अपने WC के आगे एक फ़ुट स्टूल रख लीजिए।</td><td lang=te>మీ టాయిలెట్ ముందు ఒక ఫుట్ స్టూల్ పెట్టుకోండి.</td><td lang=ml>നിങ്ങളുടെ ക്ലോസറ്റിന്റെ മുന്നിൽ ഒരു ഫുട്ട് സ്റ്റൂൾ വെച്ചോളൂ.</td><td>Place a foot stool in front of your toilet.</td><td><span class=flag>health-claim</span></td></tr>
+<tr><td class=t>109.0–113.0</td><td lang=hi>अगर ये न मिल पाए, तो एक बाल्टी को उल्टा करके भी रख सकते हैं।</td><td lang=te>అది దొరక్కపోతే, ఒక బకెట్‌ని బోర్లా పెట్టి కూడా వాడుకోవచ్చు.</td><td lang=ml>അത് കിട്ടിയില്ലെങ്കിൽ ഒരു ബക്കറ്റ് കമഴ്ത്തി വെച്ചാലും മതി.</td><td>If that is not available, you can also place a bucket upside down and use it.</td><td><span class=flag>health-claim</span></td></tr>
+<tr><td class=t>113.0–118.0</td><td lang=hi>इससे आपकी बॉडी को काफ़ी हद तक उसी स्क्वाटिंग पोज़िशन का फ़ायदा मिलता है।</td><td lang=te>దీంతో మీ బాడీకి చాలా వరకూ అదే స్క్వాటింగ్ పొజిషన్ బెనిఫిట్ దొరుకుతుంది.</td><td lang=ml>ഇതുകൊണ്ട് ബോഡിക്ക് ഏകദേശം അതേ സ്ക്വാട്ടിംഗ് പൊസിഷന്റെ ഗുണം കിട്ടും.</td><td>With this, your body gets the benefit of that same squatting position to a large extent.</td><td></td></tr>
+<tr><td class=t>119.0–122.0</td><td lang=hi>अब मुझे पता है, आप में से कुछ लोग क्या सोच रहे होंगे —</td><td lang=te>మీలో కొందరు ఏం అనుకుంటున్నారో నాకు తెలుసు —</td><td lang=ml>ചിലർ എന്താ ചിന്തിക്കുന്നെന്ന് അറിയാം —</td><td>I know what some of you must be thinking —</td><td></td></tr>
+<tr><td class=t>122.0–125.0</td><td lang=hi>इतनी छोटी सी चीज़ बदलने से क्या ही फ़र्क़ पड़ेगा?</td><td lang=te>ఇంత చిన్న విషయం మార్చితే ఏం తేడా వస్తుందిలే అని, కదా?</td><td lang=ml>ഇത്ര ചെറിയ കാര്യം മാറ്റിയാൽ എന്ത് വ്യത്യാസം?</td><td>What difference will changing such a small thing make anyway, right?</td><td></td></tr>
+<tr><td class=t>125.0–130.0</td><td lang=hi>वेल, फ़र्क़ पड़ेगा। इन फ़ैक्ट, फ़ुट स्टूल पे तो काफ़ी रिसर्च भी की गई है,</td><td lang=te>తేడా వస్తుంది! నిజానికి ఫుట్ స్టూల్ మీద చాలా రీసెర్చ్ కూడా జరిగింది.</td><td lang=ml>വരും, വ്യത്യാസം വരും. സത്യത്തിൽ ഫുട്ട് സ്റ്റൂളിനെ പറ്റി കുറേ റിസർച്ച് വരെ നടന്നിട്ടുണ്ട്.</td><td>It will make a difference! In fact, a lot of research has also been done on the foot stool.</td><td></td></tr>
+<tr><td class=t>130.0–137.0</td><td lang=hi>जो बताती है कि जिन लोगों ने इसको यूज़ किया, उनको मोशन पास करने में पहले से सिर्फ़ आधा समय लगा।</td><td lang=te>అందులో తేలిందేంటంటే — దీన్ని వాడిన వాళ్లకి మోషన్ పాస్ అవ్వడానికి ముందు కంటే సగం టైమే పట్టింది.</td><td lang=ml>ഇത് യൂസ് ചെയ്തവർക്ക് മോഷൻ പാസ് ആക്കാൻ പഴയതിന്റെ പകുതി സമയമേ വേണ്ടി വന്നുള്ളൂ എന്നാണ് അവ പറയുന്നത്.</td><td>What came out in it is — for those who used this, passing motion took only half the time compared to before.</td><td><span class=flag>health-claim</span></td></tr>
+<tr><td class=t>137.0–144.0</td><td lang=hi>उन्हें ज़ोर कम लगाना पड़ा, और उठने के बाद उनको बॉडी में ज़्यादा ख़ालीपन और मन में ज़्यादा सैटिस्फ़ैक्शन फ़ील हुआ।</td><td lang=te>వాళ్లు తక్కువ ఫోర్స్ పెట్టాల్సి వచ్చింది — లేచాక బాడీ ఖాళీగా, తేలిగ్గా అనిపించింది, మనసుకి ఎక్కువ శాటిస్‌ఫాక్షన్ దొరికింది.</td><td lang=ml>അവർക്ക് ബലം കുറച്ചേ കൊടുക്കേണ്ടി വന്നുള്ളൂ; എഴുന്നേറ്റപ്പോൾ വയറ് കൂടുതൽ കാലിയായ പോലെയും മനസ്സിന് കൂടുതൽ സാറ്റിസ്ഫാക്ഷനും ഫീൽ ചെയ്തു.</td><td>They had to apply less force — after getting up the body felt empty and light, and the mind got more satisfaction.</td><td><span class=flag>health-claim</span></td></tr>
+<tr><td class=t>145.0–149.0</td><td lang=hi>तो आप भी आज से ही इस फ़ुट स्टूल को यूज़ करना शुरू करें।</td><td lang=te>కాబట్టి మీరు కూడా ఈ రోజు నుంచే ఫుట్ స్టూల్ వాడడం స్టార్ట్ చేయండి.</td><td lang=ml>നിങ്ങളും ഇന്ന് മുതൽ ഫുട്ട് സ്റ്റൂൾ യൂസ് ചെയ്തു തുടങ്ങൂ.</td><td>So you too start using the foot stool from today itself.</td><td><span class=flag>health-claim</span></td></tr>
+<tr><td class=t>149.0–153.0</td><td lang=hi>अगले स्टेप पर बढ़ने से पहले एक चीज़ समझना बहुत ज़रूरी है —</td><td lang=te>నెక్స్ట్ స్టెప్‌కి వెళ్లే ముందు ఒక విషయం అర్థం చేసుకోవడం చాలా ముఖ్యం —</td><td lang=ml>അടുത്ത സ്റ്റെപ്പിന് മുമ്പ് ഒരു കാര്യം അറിയണം —</td><td>Before going to the next step, it is very important to understand one thing —</td><td></td></tr>
+<tr><td class=t>153.0–156.0</td><td lang=hi>ये पेट साफ़ न होने की प्रॉब्लम होती क्यों है?</td><td lang=te>కడుపు శుభ్రం అవ్వకపోవడం ఎందుకు జరుగుతుంది?</td><td lang=ml>വയറ് ക്ലീൻ ആവാത്തത് എന്തുകൊണ്ടാണ്?</td><td>Why does the stomach not getting cleared happen?</td><td></td></tr>
+<tr><td class=t>156.0–159.0</td><td lang=hi>देखिए, जब हम शरीर को एक्सरसाइज़ नहीं देते,</td><td lang=te>చూడండి, మనం బాడీకి ఎక్సర్‌సైజ్ ఇవ్వనప్పుడు,</td><td lang=ml>നോക്കൂ, നമ്മൾ ബോഡിക്ക് എക്സർസൈസ് കൊടുക്കാതിരിക്കുമ്പോൾ,</td><td>See, when we do not give the body exercise,</td><td></td></tr>
+<tr><td class=t>159.0–162.0</td><td lang=hi>जब हम ज़्यादातर ऐसा खाना खाते हैं जिसमें पानी कम होता है,</td><td lang=te>నీళ్ల శాతం తక్కువుండే ఫుడ్ ఎక్కువ తిన్నప్పుడు,</td><td lang=ml>വെള്ളം കുറഞ്ഞ ഭക്ഷണം കൂടുതലായി കഴിക്കുമ്പോൾ,</td><td>When we eat mostly food with low water percentage,</td><td></td></tr>
+<tr><td class=t>162.0–164.0</td><td lang=hi>या जब हम बहुत स्ट्रेस लेते हैं,</td><td lang=te>లేదా బాగా స్ట్రెస్ తీసుకున్నప్పుడు,</td><td lang=ml>അല്ലേൽ സ്ട്രെസ്സ് എടുക്കുമ്പോൾ,</td><td>Or when we take a lot of stress,</td><td></td></tr>
+</tbody></table></div>
+
+<h2>How this maps to battery-lifespan work</h2>
+<p class="lead">This is a chain of ML models with measured stages, QC gates between them, and a human review where it matters. A simulation → ML surrogate → dashboard pipeline needs the same engineering, for example MD runs → degradation features → remaining-life model.</p>
+</div></body></html>
