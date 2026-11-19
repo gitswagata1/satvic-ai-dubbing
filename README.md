@@ -4,6 +4,8 @@
 
 **Dub Hindi audio into Telugu and Malayalam in the creator's cloned voice — fully open-source, zero API cost.**
 
+### ▶ [Live demo: listen to the dubs, see the pipeline and QC](https://gitswagata1.github.io/satvic-ai-dubbing/)
+
 <br/>
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
@@ -19,7 +21,7 @@
 > **Problem:** Indian creators' long-form content stays locked in one language, and commercial dubbing is expensive and rarely supports Telugu or Malayalam in the speaker's own voice.
 > **Solution:** a local chain of open models (Demucs → Whisper → human-reviewed translation → IndicF5 voice clone → ffmpeg) that dubs Hindi into Telugu and Malayalam at ₹0 API cost.
 >
-> **Key features:** ① 5-model pipeline with per-stage status and timing (`pipeline.py`, `timings.json`) · ② Streamlit UI: upload a clip → choose language → watch each stage → play output · ③ Automated QC: a language-ID scan-and-regenerate loop brought reference-echo leaks to **0 of 460 segments**
+> **Key features:** ① 5-model pipeline with per-stage status and timing (`pipeline.py`, `timings.json`) · ② Streamlit UI: upload a clip → choose language → watch each stage → play output · ③ Automated QC: a cleaner voice reference plus a scan-and-regenerate loop brought reference-echo leaks to **0 of 460 segments** (final content-based scan)
 >
 > **Tech stack:** Python · PyTorch · Demucs · OpenAI Whisper · IndicF5 (AI4Bharat) · ffmpeg · Streamlit
 >
